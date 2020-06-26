@@ -40,3 +40,22 @@ Two great online resources have been leveraged to compile the list:
 [11](https://leetcode.com/problems/container-with-most-water/) | Container With Most Water | Medium | [42](https://leetcode.com/problems/trapping-rain-water/) | Head and tail pointers move toward the middle.
 
 
+## Binary Search
+Please watch this great video tutorial ([part 1](https://www.youtube.com/watch?v=v57lNF2mb_s), 
+[part 2](https://www.youtube.com/watch?v=J-IQxfYRTto)) on binary search. It is extremely important to **implement your own 
+versions** of binary search algorithms, and make correspondence between your versions and `bisect.bisect()/bisect.bisect_right()` and `bisect.bisect_left()`. 
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[69](https://leetcode.com/problems/sqrtx/) | Sqrt(x)   | Easy | | 
+[35](https://leetcode.com/problems/search-insert-position/) | Search Insert Position | Easy | [704](https://leetcode.com/problems/binary-search/) | `bisect.bisect_left()`
+[278](https://leetcode.com/problems/first-bad-version/) | First Bad Version | Easy | [981](https://leetcode.com/problems/time-based-key-value-store/) |
+[744](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) | Find Smallest Letter Greater Than Target | Easy | | Be careful about the 'wrap around' constraint and duplicates. Use `bisect.bisect()` function.
+[875](https://leetcode.com/problems/koko-eating-bananas/) | Koko Eating Bananas | Medium | [1011](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | Search by checking validity.
+[74](https://leetcode.com/problems/search-a-2d-matrix/) | Search a 2D Matrix | Medium | | Search row and then search column or treat 2D as 1D array.
+[34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Find First and Last Position of Element in Sorted Array | Medium | | Use both `bisect.bisect_left()` and `bisect.bisect()`.
+[33](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Search in Rotated Sorted Array | Medium | [81](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/), [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/), [154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) | `left +=1` and `right -= 1` if `nums[left]==nums[mid]==nums[right]`.
+[540](https://leetcode.com/problems/single-element-in-a-sorted-array/) | Single Element in a Sorted Array | Medium | | This problem is tricky. If `mid` is even and `nums[mid] == nums[mid+1]`, then `left = mid+2`. If `mid` is odd, then `mid -= 1` and check condition.
+[378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | Kth Smallest Element in a Sorted Matrix | Medium | | Nested binary searches. Outer one search for the target, and inner one is used to calculate how many elements are less than or equal to the target candidate in each row.
+[719](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) | Find K-th Smallest Pair Distance | Hard | | Sort array first, and then search by checking validity. 
+[4](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Median of Two Sorted Arrays | Hard | | Binary search using the shorter list based on condition `nums_short[mid1] <? nums_long[mid2-1]`.
