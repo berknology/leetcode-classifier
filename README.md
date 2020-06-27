@@ -23,6 +23,7 @@ Two great online resources have been leveraged to compile the list:
 [148](https://leetcode.com/problems/sort-list/) | Sort List | Medium |  | Slow and fast pointers + merge sort
 [234](https://leetcode.com/problems/palindrome-linked-list/) | Palindrome Linked List | Medium | | Use slow and fast pointers to cut it into halves. Reverse the second half and compare with the first half.
 
+
 ## Two pointers
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
@@ -78,3 +79,18 @@ be different for different problems.
 [501](https://leetcode.com/problems/find-mode-in-binary-search-tree/) | Find Mode in Binary Search Tree | Easy |  | Be careful to the BST definition, and use inorder traversal
 [450](https://leetcode.com/problems/delete-node-in-a-bst/) | Delete Node in a BST | Medium |  | The deleted node could have no child, 1 child, and 2 children (which is the most tricky part)
 [99](https://leetcode.com/problems/recover-binary-search-tree/) | Recover Binary Search Tree | Hard |  | Inorder traversal to find the two nodes and swap them
+
+
+## Stack and Queue
+The main characteristics of stack and queue are LIFO (Last In First Out) and FIFO (First In First Out) respectively. 
+Stack and queue are frequently used in tree and graph traversal problems, leveraging stack for DFS and queue for BFS. We 
+will not list such problems in this list.
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[155](https://leetcode.com/problems/min-stack/) | Min Stack | Easy |  | Push a tuple (x, minimum) into stack. 
+[232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue using Stacks | Easy |  | Be careful about the amortized time complexity of each operation. Use two stacks. 
+[20](https://leetcode.com/problems/valid-parentheses/) | Valid Parentheses | Easy |  | Be careful about the type of parentheses. Maybe use a dict to simplify code.
+[739](https://leetcode.com/problems/daily-temperatures/) | Daily Temperatures | Medium |  | Iterate through array, and pop only when current temp greater than that at the top of the stack. Otherwise, push.
+[503](https://leetcode.com/problems/next-greater-element-ii/) | Next Greater Element II | Medium | [496](https://leetcode.com/problems/next-greater-element-i/) | Iterate trough the concatenated array, e.g., given a list `nums`, iterate through `nums+nums`.
+
