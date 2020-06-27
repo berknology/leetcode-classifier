@@ -1,7 +1,7 @@
 # Leetcode problem classifier
 This repository aims to categorize and label frequently asked leetcode coding questions into major categories such as 
 linked list, binary search, two pointers, and backtracking, etc., and facilitate interviewees and developers to practice 
-common programming interview questions.
+common programming interview questions. 
 
 Two great online resources have been leveraged to compile the list: 
 [Huahua](https://zxi.mytechroad.com/blog/leetcode-problem-categories/) and 
@@ -93,4 +93,18 @@ will not list such problems in this list.
 [20](https://leetcode.com/problems/valid-parentheses/) | Valid Parentheses | Easy |  | Be careful about the type of parentheses. Maybe use a dict to simplify code.
 [739](https://leetcode.com/problems/daily-temperatures/) | Daily Temperatures | Medium |  | Iterate through array, and pop only when current temp greater than that at the top of the stack. Otherwise, push.
 [503](https://leetcode.com/problems/next-greater-element-ii/) | Next Greater Element II | Medium | [496](https://leetcode.com/problems/next-greater-element-i/) | Iterate trough the concatenated array, e.g., given a list `nums`, iterate through `nums+nums`.
+
+
+## Hash table & set
+Hash table/set is one of the most frequently asked data structures in coding interviews. When stuck, try hash table. 
+Hash table is also very useful to make time-space trade off. They enable `O(1)` time of searching. 
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[1](https://leetcode.com/problems/two-sum/) | Two Sum | Easy |  | Iterate through the array and check if `target - nums[i]` is in the hash map.
+[217](https://leetcode.com/problems/contains-duplicate/) | Contains Duplicate | Easy |  | Hash set
+[594](https://leetcode.com/problems/longest-harmonious-subsequence/) | Longest Harmonious Subsequence | Easy |  | Iterate the array and do `max(ans, count[num] + count[num+1])`.
+[128](https://leetcode.com/problems/longest-consecutive-sequence/)  | Longest Consecutive Sequence | Hard/Medium |  | Convert array to hash set. Iterate the array and check if the next element is in the set. 
+[560](https://leetcode.com/problems/subarray-sum-equals-k/)  | Subarray Sum Equals K | Medium |  | Use cumulative sum and the two sum problem ([1](https://leetcode.com/problems/two-sum/)) idea.
+
 
