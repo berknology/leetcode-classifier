@@ -59,3 +59,22 @@ versions** of binary search algorithms, and make correspondence between your ver
 [378](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | Kth Smallest Element in a Sorted Matrix | Medium | | Nested binary searches. Outer one search for the target, and inner one is used to calculate how many elements are less than or equal to the target candidate in each row.
 [719](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) | Find K-th Smallest Pair Distance | Hard | | Sort array first, and then search by checking validity. 
 [4](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Median of Two Sorted Arrays | Hard | | Binary search using the shorter list based on condition `nums_short[mid1] <? nums_long[mid2-1]`.
+
+
+## Binary Search Tree
+
+A special characteristic of BST is that its inorder traversal yields a sorted array. Note that the definitions of BST might 
+be different for different problems.
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[700](https://leetcode.com/problems/search-in-a-binary-search-tree/) | Search in a Binary Search Tree | Easy | [701](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | Recursion and search in half of the subtree each time.
+[669](https://leetcode.com/problems/trim-a-binary-search-tree/) | Trim a Binary Search Tree | Easy | | Recursion, and check current node value with lower and upper bounds
+[653](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | Two Sum IV - Input is a BST | Easy | | Use inorder to get a sorted array, and use two pointers. 
+[235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Lowest Common Ancestor of a Binary Search Tree | Easy | [236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Recursion, and check current node value with the values of the two given nodes
+[98](https://leetcode.com/problems/validate-binary-search-tree/) | Validate Binary Search Tree | Medium | [530](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | Check value with lower and upper bounds for each node. Another way is to leverage inorder traversal.
+[230](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Kth Smallest Element in a BST | Medium |  | Inorder traversal
+[108](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | Convert Sorted Array to Binary Search Tree | Easy | [109](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Divide array by half and use recursion.
+[501](https://leetcode.com/problems/find-mode-in-binary-search-tree/) | Find Mode in Binary Search Tree | Easy |  | Be careful to the BST definition, and use inorder traversal
+[450](https://leetcode.com/problems/delete-node-in-a-bst/) | Delete Node in a BST | Medium |  | The deleted node could have no child, 1 child, and 2 children (which is the most tricky part)
+[99](https://leetcode.com/problems/recover-binary-search-tree/) | Recover Binary Search Tree | Hard |  | Inorder traversal to find the two nodes and swap them
