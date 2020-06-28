@@ -129,3 +129,17 @@ be known.
 [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | Binary Tree Preorder Traversal | Medium | [589](https://leetcode.com/problems/n-ary-tree-preorder-traversal/), [145](https://leetcode.com/problems/binary-tree-postorder-traversal/), [590](https://leetcode.com/problems/n-ary-tree-postorder-traversal/), [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Recursively is trivial, but iteratively is very complicated. IMO, iteratively in-order traversal is the hardest.
 [297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Serialize and Deserialize Binary Tree | Hard | [449](https://leetcode.com/problems/serialize-and-deserialize-bst/) | In the binary tree problem, we need to have "null" indicator to represent null node in the serialized string, while BST does not. BST problem uses pre-order traversal to serialize and deserialize by recursively building trees by checking lower and upper bounds for subtrees. 
 [968](https://leetcode.com/problems/binary-tree-cameras/) | Binary Tree Cameras | Hard | [979](https://leetcode.com/problems/distribute-coins-in-binary-tree/) | Bottom up. DFS + greedy. 
+
+
+## Divide and Conquer
+
+Divide and conquer approach refers to decomposing a big problem into smaller problems, then combine the results obtained 
+from these smaller problems which are solved recursively. When stuck, think about the base case (the smallest problem), 
+and see if we can build up a solution recursively from there. 
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[912](https://leetcode.com/problems/sort-an-array/) | Sort an Array | Medium | [215](https://leetcode.com/problems/kth-largest-element-in-an-array/), [148](https://leetcode.com/problems/sort-list/) | Merge/quick sort, quick select
+[241](https://leetcode.com/problems/different-ways-to-add-parentheses/) | Different Ways to Add Parentheses | Medium |  | Divide the string into two parts when encountering an operator, and recurse on each part and combine results.
+[95](https://leetcode.com/problems/unique-binary-search-trees-ii/) | Unique Binary Search Trees II | Medium |  | Iterate through the possible values ("array"), and use the current as root and pivot, and divide the "array" into two parts, and find all possible solutions using the recursion results obtained by using the aforementioned two parts.
+[315](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | Count of Smaller Numbers After Self | Hard |  | Merge sort. The key is gradually updating the answer in the merge step.
