@@ -101,6 +101,7 @@ Hash table is also very useful to make time-space trade off. They enable `O(1)` 
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[169](https://leetcode.com/problems/majority-element/) | Majority Element | Easy |  | Hash table
 [1](https://leetcode.com/problems/two-sum/) | Two Sum | Easy |  | Iterate through the array and check if `target - nums[i]` is in the hash map.
 [217](https://leetcode.com/problems/contains-duplicate/) | Contains Duplicate | Easy |  | Hash set
 [594](https://leetcode.com/problems/longest-harmonious-subsequence/) | Longest Harmonious Subsequence | Easy |  | Iterate the array and do `max(ans, count[num] + count[num+1])`.
