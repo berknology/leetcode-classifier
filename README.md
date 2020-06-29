@@ -145,6 +145,23 @@ and see if we can build up a solution recursively from there.
 [315](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | Count of Smaller Numbers After Self | Hard |  | Merge sort. The key is gradually updating the answer in the merge step.
 
 
+## Graph
+
+Graph problems are generalization of tree problems. DFS and BFS traversals are extremely important algorithms in graph 
+problems. One key difference between graph and tree problems is that graph traversal requires a `visited` variable to 
+memorize nodes that have been visited before. Moreover, use DFS to solve connected problems and BFS to solve shortest
+path problems. The complexity of graph traversals is generally `O(V+E)` in time and `O(V)` in space, where `V` is the 
+number of vertices and `E` is the number of edges. 
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[997](https://leetcode.com/problems/find-the-town-judge/) | Find the Town Judge | Easy |  | Use both in-degrees and out-degrees.
+[133](https://leetcode.com/problems/clone-graph/) | Clone Graph | Medium | [138](https://leetcode.com/problems/copy-list-with-random-pointer/) | Use hash table and DFS. The hash table also serves as the `visited`.
+[200](https://leetcode.com/problems/number-of-islands/) | Number of Islands | Medium | [547](https://leetcode.com/problems/friend-circles/), [695](https://leetcode.com/problems/max-area-of-island/), [733](https://leetcode.com/problems/flood-fill/), [841](https://leetcode.com/problems/keys-and-rooms/), [827](https://leetcode.com/problems/making-a-large-island/), [1202](https://leetcode.com/problems/smallest-string-with-swaps/), [130](https://leetcode.com/problems/surrounded-regions/), [417](https://leetcode.com/problems/pacific-atlantic-water-flow/) | It is a connected components problem, use DFS. Given grid might be able to be used as `visited`.
+[1162](https://leetcode.com/problems/as-far-from-land-as-possible/) | As Far from Land as Possible | Medium | [433](https://leetcode.com/problems/minimum-genetic-mutation/), [863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/), [1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/), [1091](https://leetcode.com/problems/shortest-path-in-binary-matrix/), [279](https://leetcode.com/problems/perfect-squares/), [127](https://leetcode.com/problems/word-ladder/) | It is a shortest/longest path problem, use BFS. 
+[785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite? | Medium | [886](https://leetcode.com/problems/possible-bipartition/), [1042](https://leetcode.com/problems/flower-planting-with-no-adjacent/) | Graph coloring
+
+
 ## Advanced Topics
 
 #### Trie
