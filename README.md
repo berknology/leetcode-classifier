@@ -143,3 +143,18 @@ and see if we can build up a solution recursively from there.
 [241](https://leetcode.com/problems/different-ways-to-add-parentheses/) | Different Ways to Add Parentheses | Medium |  | Divide the string into two parts when encountering an operator, and recurse on each part and combine results.
 [95](https://leetcode.com/problems/unique-binary-search-trees-ii/) | Unique Binary Search Trees II | Medium |  | Iterate through the possible values ("array"), and use the current as root and pivot, and divide the "array" into two parts, and find all possible solutions using the recursion results obtained by using the aforementioned two parts.
 [315](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | Count of Smaller Numbers After Self | Hard |  | Merge sort. The key is gradually updating the answer in the merge step.
+
+
+## Advanced Topics
+
+#### Topological Sorting
+
+Topological sort is only feasible for DAG (directed acyclic graph). One way to implement topological sorting is use BFS.
+First add nodes with in-degrees/out-degrees equal to 0 to queue. Pop a node and traverse to its neighbors. Subtract 1 from the 
+in-degrees/out-degrees of the neighbors. If the current in-degree/out-degree of a neighbor is equal to 0, add it to the queue. 
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[207](https://leetcode.com/problems/course-schedule/) | Course Schedule | Medium | [210](https://leetcode.com/problems/course-schedule-ii/), [802](https://leetcode.com/problems/find-eventual-safe-states/) | Build graph and in-degree list, then do topological sort.
+
+
