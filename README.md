@@ -147,14 +147,35 @@ and see if we can build up a solution recursively from there.
 
 ## Advanced Topics
 
-#### Topological Sorting
+#### Trie
 
-Topological sort is only feasible for DAG (directed acyclic graph). One way to implement topological sorting is use BFS.
-First add nodes with in-degrees/out-degrees equal to 0 to queue. Pop a node and traverse to its neighbors. Subtract 1 from the 
-in-degrees/out-degrees of the neighbors. If the current in-degree/out-degree of a neighbor is equal to 0, add it to the queue. 
+`Trie` is a special `tree` data structure that stores the letters of a string in an ordered manner. It enables fast 
+search of a string by traversing down a branch path of the tree. It behaves as a dictionary, we can navigate to the next 
+letter from the current letter. Each Trie node has a `children` variable and a `is_word` variable. The `children` 
+variable is generally a hash table with letter as key and Trie node as the value, and the `is_word` variable is boolean.
+There are three common methods for Trie data structure, `insert`, `search`, and `start_with`. The difference between the
+`search` and `start_with` functions is the `is_word` flag is true or not after iterating through the searched string. 
+When encountering key words such as `prefix`, `dictionary`, `search`, and `word`, etc. in a coding problem, think about 
+the Trie data structure.
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
-[207](https://leetcode.com/problems/course-schedule/) | Course Schedule | Medium | [210](https://leetcode.com/problems/course-schedule-ii/), [802](https://leetcode.com/problems/find-eventual-safe-states/) | Build graph and in-degree list, then do topological sort.
+[208](https://leetcode.com/problems/implement-trie-prefix-tree/) | Implement Trie (Prefix Tree) | Medium | [677](https://leetcode.com/problems/map-sum-pairs/), [648](https://leetcode.com/problems/replace-words/), [676](https://leetcode.com/problems/implement-magic-dictionary/), [720](https://leetcode.com/problems/longest-word-in-dictionary/), [211](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Defining a `TrieNode` class whose children is a `defaultdict(TrieNode)` type variable will facilitate coding.
+
+#### Topological Sorting
+
+Topological sort is only feasible for DAG (directed acyclic graph). One way to implement topological sorting is use BFS.
+First add nodes with in-degrees/out-degrees equal to 0 to queue. Then pop a node, traverse to its neighbors, and 
+subtract 1 from the in-degrees/out-degrees of the neighbors. If the current in-degree/out-degree of a neighbor is equal 
+to 0, add it to the queue.  
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[207](https://leetcode.com/problems/course-schedule/) | Course Schedule | Medium | [210](https://leetcode.com/problems/course-schedule-ii/), [802](https://leetcode.com/problems/find-eventual-safe-states/) | Build graph and in-degree/out-degree list, then do topological sort.
+
+#### Union Find
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
 
 
