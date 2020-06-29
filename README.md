@@ -110,13 +110,12 @@ Hash table is also very useful to make time-space trade off. They enable `O(1)` 
 
 
 ## Tree
-Tree problems are generally traversal problems using recursion. In most of tree traversal problems, the time complexity 
+Most of tree problems are traversal problems. It is a must to master algorithms such as DFS including 'pre-order', 
+'in-order', and 'post-order', and BFS or level order traversal. Generally speaking, the time complexity of DFS algorithm 
 is `O(n)` where `n` is the number of nodes and the space complexity is `O(h)` where `h` is the height of the tree due to 
-implicit stack used in recursion. 
-
-It is very important to know concepts such as 'depth', 'height', 'level', 'complete', and 'perfect', 
-etc. Moreover, DFS traversal methods such as 'pre-order', 'in-order', and 'post-order', and BFS traversal methods should
-be known.
+implicit stack used in recursion. Additionally, BFS problems generally have complexity of `O(n)` in time and `O(w)` in
+space, where `w` is the maximum width of a tree. Moreover, it is very important to know concepts such as 'depth', 
+'height', 'level', 'complete', and 'perfect', etc. 
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
