@@ -157,7 +157,7 @@ number of vertices and `E` is the number of edges.
 [997](https://leetcode.com/problems/find-the-town-judge/) | Find the Town Judge | Easy |  | Use both in-degrees and out-degrees.
 [133](https://leetcode.com/problems/clone-graph/) | Clone Graph | Medium | [138](https://leetcode.com/problems/copy-list-with-random-pointer/) | Use hash table and DFS. The hash table also serves as the `visited`.
 [200](https://leetcode.com/problems/number-of-islands/) | Number of Islands | Medium | [547](https://leetcode.com/problems/friend-circles/), [695](https://leetcode.com/problems/max-area-of-island/), [733](https://leetcode.com/problems/flood-fill/), [841](https://leetcode.com/problems/keys-and-rooms/), [827](https://leetcode.com/problems/making-a-large-island/), [1202](https://leetcode.com/problems/smallest-string-with-swaps/), [130](https://leetcode.com/problems/surrounded-regions/), [417](https://leetcode.com/problems/pacific-atlantic-water-flow/) | It is a connected components problem, use DFS. Given grid might be able to be used as `visited`.
-[1162](https://leetcode.com/problems/as-far-from-land-as-possible/) | As Far from Land as Possible | Medium | [433](https://leetcode.com/problems/minimum-genetic-mutation/), [863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/), [1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/), [1091](https://leetcode.com/problems/shortest-path-in-binary-matrix/), [279](https://leetcode.com/problems/perfect-squares/), [127](https://leetcode.com/problems/word-ladder/) | It is a shortest/longest path problem, use BFS. 
+[1162](https://leetcode.com/problems/as-far-from-land-as-possible/) | As Far from Land as Possible | Medium | [433](https://leetcode.com/problems/minimum-genetic-mutation/), [863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/), [1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/), [1091](https://leetcode.com/problems/shortest-path-in-binary-matrix/), [279](https://leetcode.com/problems/perfect-squares/), [127](https://leetcode.com/problems/word-ladder/), [399](https://leetcode.com/problems/evaluate-division/) | It is a shortest/longest path problem, use BFS. 
 [785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite? | Medium | [886](https://leetcode.com/problems/possible-bipartition/), [1042](https://leetcode.com/problems/flower-planting-with-no-adjacent/) | Graph coloring
 
 
@@ -191,7 +191,39 @@ to 0, add it to the queue.
 
 #### Union Find
 
+Union Find algorithm or disjoint-set data structure aims to find if two nodes are in the same set in amortized `O(1)` 
+time. There are two operations in the `UnionFind` class: `find` and `union`. To enable amortized `O(1)` time of `find`, 
+two optimizations needs to be done for the `UnionFind` class: path compression and union by rank.
+
+A python implementation of the disjoint set data structure is given below.
+```python
+class UnionFind:
+    def __init__(self, n):
+        self._parents = [i for i in range(n + 1)]
+        self._ranks = [1 for _ in range(n + 1)]
+    
+    def find(self, u):
+        if u != self._parents[u]:
+            self._parents[u] = self.find(self._parents[u])
+        return self._parents[u]
+    
+    def union(self, u, v):
+        pu, pv = self.find(u), self.find(v)
+        if pu == pv: return False
+        if self._ranks[pu] < self._ranks[pv]:
+            self._parents[pu] = pv
+        elif self._ranks[pu] > self._ranks[pv]:
+            self._parents[pv] = pu
+        else:        
+            self._parents[pv] = pu
+            self._ranks[pu] += 1
+        return True
+```
+
+In a coding interview, when asked a Union Find problem and you are not familiar with this algorithm, try other 
+algorithms such as DFS or BFS, and you might also be able to solve the problem. 
+
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
-
+[684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | Medium | [1319](https://leetcode.com/problems/number-of-operations-to-make-network-connected/), [990](https://leetcode.com/problems/satisfiability-of-equality-equations/), [721](https://leetcode.com/problems/accounts-merge/), [737](https://leetcode.com/problems/sentence-similarity-ii/), [685](https://leetcode.com/problems/redundant-connection-ii/) | 
 
