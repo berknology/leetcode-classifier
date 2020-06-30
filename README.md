@@ -220,8 +220,8 @@ class UnionFind:
         return True
 ```
 
-In a coding interview, when asked a Union Find problem and you are not familiar with this algorithm, try other 
-algorithms such as DFS or BFS, and you might also be able to solve the problem. 
+**In a coding interview, when asked a Union Find problem and you are not familiar with this algorithm, try other 
+algorithms such as DFS or BFS, and it is highly likely that you are still able to solve the problem.**
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
