@@ -161,6 +161,33 @@ number of vertices and `E` is the number of edges.
 [785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite? | Medium | [886](https://leetcode.com/problems/possible-bipartition/), [1042](https://leetcode.com/problems/flower-planting-with-no-adjacent/) | Graph coloring
 
 
+## Greedy Algorithm
+
+Greedy algorithm is a simple and heuristic algorithm that follows the problem-solving heuristic of making the locally 
+optimal choice which **might but not necessarily** end up a global optimal solution. It builds up a solution piece by piece, always choosing the 
+next piece that offers the most obvious and immediate benefit. Sometimes, we solved a problem using our instinct without 
+even realizing it is a greedy algorithm problem.
+
+The difference between greedy algorithm and dynamic programming (DP) is subtle. Detailed comparison is highlighted in 
+this [article](https://www.geeksforgeeks.org/greedy-approach-vs-dynamic-programming/). In general, greedy algorithm is 
+simpler and myopic, and make heuristic decision based on locally optimal choice. DP is generally harder, and makes 
+decision at each step considering current problem and solution to previously solved sub-problems. 
+
+In practice, a problem might be able to solved in both ways, as pointed out in
+this [article](https://medium.com/algorithms-and-leetcode/greedy-algorithm-explained-using-leetcode-problems-80d6fee071c4) 
+"beneath every greedy algorithm, there is almost always a more cumbersome dynamic programming solution".
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | Easy |  | **Have kids. :)**
+[605](https://leetcode.com/problems/can-place-flowers/) | Can Place Flowers | Easy |  | Pad each side of `flowerbed` by `0`, and iteratively check if we can place flower by `flowerbed[i-1] == flowerbed[i] == flowerbed[i+1] == 0`.
+[121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Best Time to Buy and Sell Stock | Easy | [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Keep track of the min price. You might have solved the problem without realizing it is a greedy algorithm problem. Greedy algorithm allows you to follow you instinct. 
+[53](https://leetcode.com/problems/maximum-subarray/) | Maximum Subarray | Easy/Medium |  | Repeatedly check current sum `cur_sum = max(cur_sum + num, num)`. There is a blur boundary between greedy algorithm and DP for this problem.
+[435](https://leetcode.com/problems/non-overlapping-intervals/) | Non-overlapping Intervals | Medium | [452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Sort the intervals by the end point of each interval.
+[763](https://leetcode.com/problems/partition-labels/) | Partition Labels | Medium |  | Use a hash table to keep track of the last time (largest index) a letter appeared.
+[406](https://leetcode.com/problems/queue-reconstruction-by-height/) | Queue Reconstruction by Height | Medium |  | Sort the list by height `h` in descending order and number of people `k` in ascending order. Construct a queue `queue` by iteratively `queue.insert(k, h)` for each pair in the sorted list. 
+
+
 ## Advanced Topics
 
 #### Trie
