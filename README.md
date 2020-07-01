@@ -7,6 +7,8 @@ Two great online resources have been leveraged to compile the list:
 [Huahua](https://zxi.mytechroad.com/blog/leetcode-problem-categories/) and 
 [CyC2018](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md).
 
+**A day in the life of a software engineer: 6 hours of coffee time + 2 hours of coding.**
+
 :coffee: [Buy me a Coffee](#buy-me-a-coffee-coffee)
 
 ## Table of Content
