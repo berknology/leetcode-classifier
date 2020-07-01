@@ -9,23 +9,25 @@ Two great online resources have been leveraged to compile the list:
 
 
 ## Table of Content
-* [Linked List](#linked-list)
-* [Two pointers](#two-pointers)
-* [Binary Search](#binary-search)
-* [Binary Search Tree](#binary-search-tree)
-* [Stack and Queue](#stack-and-queue)
-* [Hash table and set](#hash-table-and-set)
-* [Tree](#tree)
-* [Divide and Conquer](#divide-and-conquer)
-* [Graph](#graph)
-* [Greedy Algorithm](#greedy-algorithm)
-* [Backtracking](#backtracking)
-* [Dynamic Programming](#dynamic-programming)
-* [Advanced Topics](#advanced-topics)
-    * [Trie](#trie)
-    * [Topological Sorting](#topological-sorting)
-    * [Union Find](#union-find)
 
+| ID    | Topic                                         | Number of problems | 
+| ----- | --------------------------------------------- | ------------------ |
+| 01    | [Linked List](#linked-list)                   | 12                 |
+| 02    | [Two pointers](#two-pointers)                 | 17                 |
+| 03    | [Binary Search](#binary-search)               | 18                 |
+| 04    | [Binary Search Tree](#binary-search-tree)     | 14                 |
+| 05    | [Stack and Queue](#stack-and-queue)           | 6                  |
+| 06    | [Hash table and set](#hash-table-and-set)     | 6                  |
+| 07    | [Tree](#tree)                                 | 34                 |
+| 08    | [Divide and Conquer](#divide-and-conquer)     | 6                  |
+| 09    | [Graph](#graph)                               | 25                 |
+| 10    | [Greedy Algorithm](#greedy-algorithm)         | 9                  |
+| 11    | [Backtracking](#backtracking)                 | 22                 |
+| 12    | [Dynamic Programming](#dynamic-programming)   | 19                 |
+| 13    | [Trie](#trie)                                 | 6                  |
+| 14    | [Topological Sorting](#topological-sorting)   | 3                  |
+| 15    | [Union Find](#union-find)                     | 6                  |
+|       |                                               | 203 (total)        |
 
 ## Linked List
 
