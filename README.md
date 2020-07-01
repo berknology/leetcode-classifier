@@ -330,3 +330,11 @@ algorithms such as DFS or BFS, and it is highly likely that you are still able t
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
 [684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | Medium | [1319](https://leetcode.com/problems/number-of-operations-to-make-network-connected/), [990](https://leetcode.com/problems/satisfiability-of-equality-equations/), [721](https://leetcode.com/problems/accounts-merge/), [737](https://leetcode.com/problems/sentence-similarity-ii/), [685](https://leetcode.com/problems/redundant-connection-ii/) | 
 
+
+## Buy me a Coffee :coffee:
+
+With enough coffee nothing is impossible!
+
+| PayPal | WeChat (微信) | AliPay (支付宝)  |
+| ------ | ------------- | --------------- |
+| ![PayPal](/images/paypal.jpg) | ![WeChat](/images/wechat.jpg) | ![AliPay](/images/alipay.jpg) |
