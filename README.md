@@ -202,7 +202,7 @@ this [article](https://medium.com/algorithms-and-leetcode/greedy-algorithm-expla
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
-[455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | Easy |  | **Have kids** :joy:
+[455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | Easy |  | **Have kids and you will know** :joy:
 [605](https://leetcode.com/problems/can-place-flowers/) | Can Place Flowers | Easy |  | Pad each side of `flowerbed` by `0`, and iteratively check if we can place flower by `flowerbed[i-1] == flowerbed[i] == flowerbed[i+1] == 0`.
 [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Best Time to Buy and Sell Stock | Easy | [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Keep track of the min price. You might have solved the problem without realizing it is a greedy algorithm problem. Greedy algorithm allows you to follow you instinct. 
 [53](https://leetcode.com/problems/maximum-subarray/) | Maximum Subarray | Easy/Medium |  | Repeatedly check current sum `cur_sum = max(cur_sum + num, num)`. There is a blur boundary between greedy algorithm and DP for this problem.
@@ -232,7 +232,7 @@ constraints of the problem. A great high-level introduction of backtracking algo
 [79](https://leetcode.com/problems/word-search/) | Word Search | Medium | [212](https://leetcode.com/problems/word-search-ii/) | DFS for problem 79 and DFS + Trie for Problem 212.
 [22](https://leetcode.com/problems/generate-parentheses/) | Generate Parentheses | Medium | [301](https://leetcode.com/problems/remove-invalid-parentheses/) | Add `(` whenever the number of `(` is smaller than `n`, and add `)` whenever the number of `)` is smaller than the number of open parentheses.  
 [131](https://leetcode.com/problems/palindrome-partitioning/) | Palindrome Partitioning | Medium | [93](https://leetcode.com/problems/restore-ip-addresses/), [698](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/), [842](https://leetcode.com/problems/split-array-into-fibonacci-sequence/), [282](https://leetcode.com/problems/expression-add-operators/) | Partition
-[37](https://leetcode.com/problems/sudoku-solver/) | Sudoku Solver | Hard | [51](https://leetcode.com/problems/n-queens/) | Hard :sob:
+[37](https://leetcode.com/problems/sudoku-solver/) | Sudoku Solver | Hard | [51](https://leetcode.com/problems/n-queens/) | Too hard :sob:
 
 
 ## Dynamic Programming
