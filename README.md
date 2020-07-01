@@ -157,7 +157,7 @@ number of vertices and `E` is the number of edges.
 [997](https://leetcode.com/problems/find-the-town-judge/) | Find the Town Judge | Easy |  | Use both in-degrees and out-degrees.
 [133](https://leetcode.com/problems/clone-graph/) | Clone Graph | Medium | [138](https://leetcode.com/problems/copy-list-with-random-pointer/) | Use hash table and DFS. The hash table also serves as the `visited`.
 [200](https://leetcode.com/problems/number-of-islands/) | Number of Islands | Medium | [547](https://leetcode.com/problems/friend-circles/), [695](https://leetcode.com/problems/max-area-of-island/), [733](https://leetcode.com/problems/flood-fill/), [841](https://leetcode.com/problems/keys-and-rooms/), [827](https://leetcode.com/problems/making-a-large-island/), [1202](https://leetcode.com/problems/smallest-string-with-swaps/), [130](https://leetcode.com/problems/surrounded-regions/), [417](https://leetcode.com/problems/pacific-atlantic-water-flow/) | It is a connected components problem, use DFS. Given grid might be able to be used as `visited`.
-[1162](https://leetcode.com/problems/as-far-from-land-as-possible/) | As Far from Land as Possible | Medium | [433](https://leetcode.com/problems/minimum-genetic-mutation/), [863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/), [1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/), [1091](https://leetcode.com/problems/shortest-path-in-binary-matrix/), [279](https://leetcode.com/problems/perfect-squares/), [127](https://leetcode.com/problems/word-ladder/), [399](https://leetcode.com/problems/evaluate-division/) | It is a shortest/longest path problem, use BFS. 
+[1162](https://leetcode.com/problems/as-far-from-land-as-possible/) | As Far from Land as Possible | Medium | [433](https://leetcode.com/problems/minimum-genetic-mutation/), [863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/), [1129](https://leetcode.com/problems/shortest-path-with-alternating-colors/), [1091](https://leetcode.com/problems/shortest-path-in-binary-matrix/), [279](https://leetcode.com/problems/perfect-squares/), [127](https://leetcode.com/problems/word-ladder/), [399](https://leetcode.com/problems/evaluate-division/), [542](https://leetcode.com/problems/01-matrix/), [934](https://leetcode.com/problems/shortest-bridge/) | It is a shortest/longest path problem, use BFS. 
 [785](https://leetcode.com/problems/is-graph-bipartite/) | Is Graph Bipartite? | Medium | [886](https://leetcode.com/problems/possible-bipartition/), [1042](https://leetcode.com/problems/flower-planting-with-no-adjacent/) | Graph coloring
 
 
@@ -186,6 +186,30 @@ this [article](https://medium.com/algorithms-and-leetcode/greedy-algorithm-expla
 [435](https://leetcode.com/problems/non-overlapping-intervals/) | Non-overlapping Intervals | Medium | [452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Sort the intervals by the end point of each interval.
 [763](https://leetcode.com/problems/partition-labels/) | Partition Labels | Medium |  | Use a hash table to keep track of the last time (largest index) a letter appeared.
 [406](https://leetcode.com/problems/queue-reconstruction-by-height/) | Queue Reconstruction by Height | Medium |  | Sort the list by height `h` in descending order and number of people `k` in ascending order. Construct a queue `queue` by iteratively `queue.insert(k, h)` for each pair in the sorted list. 
+
+## Backtracking
+
+Backtracking is an exhaustive search algorithm for solving combination, permutation, subset, and constraint satisfaction 
+problems. It solves a problem recursively by trying to build a solution incrementally while removing solutions that fail to satisfy the constraints of 
+the problem. The time complexity of backtracking algorithm is generally large, e.g., `C(n, k)` for combination problem 
+and `P(n, k)` for permutation problem [reference](https://betterexplained.com/articles/easy-permutations-and-combinations/). 
+This [video](https://zxi.mytechroad.com/blog/searching/leetcode-78-subsets/) gives a great tutorial on how to implement 
+backtracking algorithm for combination and permutation problems.
+
+There are three key pillars in backtracking algorithms: (1) the base case, exit condition or the goal to achieve, (2) 
+the choices to make to go to the next building step, and (3) pruning that discards solutions that fail to satisfy the
+constraints of the problem. A great high-level introduction of backtracking algorithm can be found 
+[here](https://www.youtube.com/watch?v=Zq4upTEaQyM).
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[17](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | Letter Combinations of a Phone Number | Medium | [77](https://leetcode.com/problems/combinations/), [39](https://leetcode.com/problems/combination-sum/), [40](https://leetcode.com/problems/combination-sum-ii/), [216](https://leetcode.com/problems/combination-sum-iii/) | Combinations
+[46](https://leetcode.com/problems/permutations/) | Permutations | Medium | [47](https://leetcode.com/problems/permutations-ii/), [784](https://leetcode.com/problems/letter-case-permutation/), [996](https://leetcode.com/problems/number-of-squareful-arrays/) | Permutations
+[78](https://leetcode.com/problems/subsets/) | Subsets | Medium | [90](https://leetcode.com/problems/subsets-ii/) | Subsets
+[79](https://leetcode.com/problems/word-search/) | Word Search | Medium | [212](https://leetcode.com/problems/word-search-ii/) | DFS for problem 79 and DFS + Trie for Problem 212.
+[22](https://leetcode.com/problems/generate-parentheses/) | Generate Parentheses | Medium | [301](https://leetcode.com/problems/remove-invalid-parentheses/) | Add `(` whenever the number of `(` is smaller than `n`, and add `)` whenever the number of `)` is smaller than the number of open parentheses.  
+[131](https://leetcode.com/problems/palindrome-partitioning/) | Palindrome Partitioning | Medium | [93](https://leetcode.com/problems/restore-ip-addresses/), [698](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/), [842](https://leetcode.com/problems/split-array-into-fibonacci-sequence/), [282](https://leetcode.com/problems/expression-add-operators/) | Partition
+[37](https://leetcode.com/problems/sudoku-solver/) | Sudoku Solver | Hard | [51](https://leetcode.com/problems/n-queens/) | Hard :(
 
 
 ## Advanced Topics
