@@ -8,7 +8,26 @@ Two great online resources have been leveraged to compile the list:
 [CyC2018](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md).
 
 
-## Linked list
+## Table of Content
+* [Linked List](#linked-list)
+* [Two pointers](#two-pointers)
+* [Binary Search](#binary-search)
+* [Binary Search Tree](#binary-search-tree)
+* [Stack and Queue](#stack-and-queue)
+* [Hash table and set](#hash-table-and-set)
+* [Tree](#tree)
+* [Divide and Conquer](#divide-and-conquer)
+* [Graph](#graph)
+* [Greedy Algorithm](#greedy-algorithm)
+* [Backtracking](#backtracking)
+* [Dynamic Programming](#dynamic-programming)
+* [Advanced Topics](#advanced-topics)
+    * [Trie](#trie)
+    * [Topological Sorting](#topological-sorting)
+    * [Union Find](#union-find)
+
+
+## Linked List
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
@@ -24,7 +43,7 @@ Two great online resources have been leveraged to compile the list:
 [234](https://leetcode.com/problems/palindrome-linked-list/) | Palindrome Linked List | Medium | | Use slow and fast pointers to cut it into halves. Reverse the second half and compare with the first half.
 
 
-## Two pointers
+## Two Pointers
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
@@ -97,7 +116,7 @@ will not list such problems in this list.
 [503](https://leetcode.com/problems/next-greater-element-ii/) | Next Greater Element II | Medium | [496](https://leetcode.com/problems/next-greater-element-i/) | Iterate trough the concatenated array, e.g., given a list `nums`, iterate through `nums+nums`.
 
 
-## Hash table & set
+## Hash table and set
 Hash table/set is one of the most frequently asked data structures in coding interviews. When stuck, try hash table. 
 Hash table is also very useful to make time-space trade off. They enable `O(1)` time of searching. 
 
