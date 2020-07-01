@@ -42,9 +42,11 @@ Two great online resources have been leveraged to compile the list:
 
 
 ## Binary Search
-Please watch this great video tutorial ([part 1](https://www.youtube.com/watch?v=v57lNF2mb_s), 
-[part 2](https://www.youtube.com/watch?v=J-IQxfYRTto)) on binary search. It is extremely important to **implement your own 
-versions** of binary search algorithms, and make correspondence between your versions and `bisect.bisect()/bisect.bisect_right()` and `bisect.bisect_left()`. 
+Please watch this [video](https://www.youtube.com/watch?v=P3YID7liBug) for an introductary tutorial and this video 
+([part 1](https://www.youtube.com/watch?v=v57lNF2mb_s), [part 2](https://www.youtube.com/watch?v=J-IQxfYRTto)) for a 
+great summary of binary search. It is extremely important to **implement your own versions** of binary search 
+algorithms, and make correspondence between your versions and `bisect.bisect()/bisect.bisect_right()` and 
+`bisect.bisect_left()`. 
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
@@ -210,6 +212,35 @@ constraints of the problem. A great high-level introduction of backtracking algo
 [22](https://leetcode.com/problems/generate-parentheses/) | Generate Parentheses | Medium | [301](https://leetcode.com/problems/remove-invalid-parentheses/) | Add `(` whenever the number of `(` is smaller than `n`, and add `)` whenever the number of `)` is smaller than the number of open parentheses.  
 [131](https://leetcode.com/problems/palindrome-partitioning/) | Palindrome Partitioning | Medium | [93](https://leetcode.com/problems/restore-ip-addresses/), [698](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/), [842](https://leetcode.com/problems/split-array-into-fibonacci-sequence/), [282](https://leetcode.com/problems/expression-add-operators/) | Partition
 [37](https://leetcode.com/problems/sudoku-solver/) | Sudoku Solver | Hard | [51](https://leetcode.com/problems/n-queens/) | Hard :(
+
+
+## Dynamic Programming
+
+Dynamic programming (DP) is an algorithm to solve problems by breaking it down into simpler and smaller subproblems 
+and utilizing the fact that the optimal solution to the overall problem depends upon the optimal solutions to these 
+subproblems. DP algorithm is similar to Greedy and Divide & Conquer algorithms in breaking down the problem into smaller 
+subproblems. However, these subproblems are not solved independently, and results of these smaller subproblems are 
+remembered and used for similar and **overlapping** subproblems. 
+
+Please watch this [video](https://www.youtube.com/watch?v=vYquumk4nWw&t=34s) for a brief introductory tutorial to DP, 
+and this [video](https://www.youtube.com/watch?v=3mY5W0yojtA) for a great summary of DP algorithms. DP has two forms: 
+top-down (recursion + memoization) and iterative bottom-up. The main goals of DP are reducing time complexity of a 
+problem solved by using recursion from exponential to lower ones such as linear or finding counting and global optimal 
+solution to a problem. The key to solve a DP problem is to find an iterative or recursive formula.  
+
+Asking DP problems in coding interviews has been a little bit controversial. It is highly likely that an interviewee 
+either solves the problem in several minutes or gets stuck for the whole coding session. Additionally, a lot of DP 
+problems are really involved and complicated. However, DP is one of the most important algorithms in practice, and 
+proven to be very useful to solve optimal control/decision problems.
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[70](https://leetcode.com/problems/climbing-stairs/) | Climbing Stairs | Easy | [746](https://leetcode.com/problems/min-cost-climbing-stairs/), [1137](https://leetcode.com/problems/n-th-tribonacci-number/), [53](https://leetcode.com/problems/maximum-subarray/) | Simple DP
+[198](https://leetcode.com/problems/house-robber/) | House Robber | Easy | [213](https://leetcode.com/problems/house-robber-ii/), [337](https://leetcode.com/problems/house-robber-iii/), [740](https://leetcode.com/problems/delete-and-earn/) | For Problem 213, try twice, one without the first house and one without the last house. Then find the maximum of them. One way to solve Problem 740 is to convert it into a house robber problem.
+[1218](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) | Longest Arithmetic Subsequence of Given Difference | Medium |  | Hash table + DP
+[62](https://leetcode.com/problems/unique-paths/) | Unique Paths | Medium | [63](https://leetcode.com/problems/unique-paths-ii/), [64](https://leetcode.com/problems/minimum-path-sum/), [120](https://leetcode.com/problems/triangle/), [931](https://leetcode.com/problems/minimum-falling-path-sum/solution/) | DP in 2-dimensional space. Deal with the boundaries first for Problems 62-64. 
+[85](https://leetcode.com/problems/maximal-rectangle/) | Maximal Rectangle | Hard/Medium | [221](https://leetcode.com/problems/maximal-square/), [1277](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) | Leverage the solution to Problem [84](https://leetcode.com/problems/largest-rectangle-in-histogram/) using stack for Problems 85 and 221.
+[309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Best Time to Buy and Sell Stock with Cooldown | Medium/Hard | [801](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/) | Multi-state DP
 
 
 ## Advanced Topics
