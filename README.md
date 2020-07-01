@@ -337,4 +337,5 @@ With enough coffee nothing is impossible!
 
 | PayPal | WeChat (微信) | AliPay (支付宝)  |
 | ------ | ------------- | --------------- |
-| ![PayPal](/images/paypal.jpg) | ![WeChat](/images/wechat.jpg) | ![AliPay](/images/alipay.jpg) |
+| <img src="/images/paypal.jpg" alt="PayPal" height="280"> | <img src="/images/wechat.jpg" alt="WeChat" height="280"> |  <img src="/images/alipay.jpg" alt="AliPay" height="280"> |
+
