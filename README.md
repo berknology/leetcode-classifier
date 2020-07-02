@@ -32,6 +32,7 @@ Two great online resources have been leveraged to compile the list:
     | 15    | [Union Find](#union-find)                     | 6                  |
     |       |                                               | 203 (total)        |
     
+* [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
 * [Common Mistakes in a Coding Interview](#common-mistakes-in-a-coding-interview-x)
 
 
@@ -336,6 +337,81 @@ algorithms such as DFS or BFS, and it is highly likely that you are still able t
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
 [684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | Medium | [1319](https://leetcode.com/problems/number-of-operations-to-make-network-connected/), [990](https://leetcode.com/problems/satisfiability-of-equality-equations/), [721](https://leetcode.com/problems/accounts-merge/), [737](https://leetcode.com/problems/sentence-similarity-ii/), [685](https://leetcode.com/problems/redundant-connection-ii/) | 
+
+
+## How to Approach a Coding Question :heavy_check_mark:
+
+I highly recommend to get a copy of [Gayle McDowell's](http://www.gayle.com/) coding interview preparation book 
+[Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850), 
+and follow the recommend **seven steps** (illustrated below) to answer any coding questions.
+
+1. **Listen carefully to the problem description and ask clarifying questions**
+
+    Don't miss any important information/keyword which might help you find an optimal solution. Most of the times, the 
+    interviewer will type the problem description into the collaborative coding environment. Do ask questions to clarify 
+    all your doubts such as input, output, edge cases, and constraints, etc. Even the problem description is crystal 
+    clear to you or you have solved this problem before, it is still helpful to repeat the problem to the interviewer in 
+    a different way to make sure you really understand it and engage the interviewer.
+
+2. **Present a nontrivial example if it is not given in the problem description**
+
+    Sometimes, the interviewer will give you an example input and an expected output. Be careful, the given example 
+    might be too trivial or just an edge case or purposely misses some edge cases or information that might help you 
+    develop a solution to the problem. In this case, you might want to clarify with your interviewer by presenting a 
+    typical and non-trivial example, and explain the expected output. This step might be consolidated with the first 
+    step depending on the situation.
+
+3. **Describe a brute force solution ASAP**
+    
+    Do not dive into coding immediately. First give an intuitive and naive solution and explain 
+    the time and space complexity, then engage/discuss with the interviewer to see if you can optimize it. Note that you 
+    need to **lead** the conversation. The motivation for this step is that it is the natural way to solve a problem 
+    that you have never seen before. The interviewer cares more about how you got to the optimal solution than the 
+    solution itself. If you rush to present an optimal solution immediately without any explanation, it makes the 
+    impression that you have solved this problem before, and you are copying what you have memorized. Note that 
+    companies try to hire developers with great problem-solving skills instead of people with good memory.
+    
+4. **Optimize your solution to get an optimal one**
+    
+    This is the most important step. You need to lead the discussion to explain why you use certain data structure 
+    and/or algorithm to optimize your brute force solution, and how you get there. Thinking out loud and explaining your 
+    thought process is extremely important in the coding interview process. Leverage the BUD (bottleneck, unnecessary, 
+    duplicated) framework and other tips in the 
+    [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+    book. This is the part where all your practice and hard work pays off. Without sufficient practice and summarization 
+    of different types and categories of coding questions, it will be challenging to come up an optimal solution to a 
+    problem, especially to a problem you have never seen before.
+    
+5. **Walk through your optimal solution**
+
+    Now you have an optimal solution and have explained how you get there, walk through the optimal solution with your 
+    interviewer to make sure you and the interviewer understand everything. 
+    
+6. **Implement your algorithm and solution**
+
+    Finally, we arrive the step of coding. Imagine you dived into coding immediately after your interviewer gave you 
+    the problem description, how many important steps you have missed! Remember to write clean code and modularize your 
+    code with standard variable and function names. [PEP 8](https://www.python.org/dev/peps/pep-0008/) is a great 
+    guideline to write clean, readable, and production-quality code. 
+    
+7. **Test your code**
+
+    It is super important to initiate testing your code before your interviewer asks you to do so. First eye-balling 
+    your code to see if there are any conceptual bugs such as keyword errors, incorrect indentations, inconsistent 
+    variable or function names, missing colons, and indexing errors, etc. Then use small cases, special cases, and edge 
+    cases to test your code. Do not panic if there are bugs. Everybody makes mistakes, and that is why we do the 
+    testing. Fix the bugs carefully and gracefully.
+
+**In a typical coding interview session, we generally need to solve one hard-level or two medium-level Leetcode 
+questions in 45 minutes, including brief self-introductions and questions, etc. Therefore, use your time smartly and do 
+not dogmatically follow the above 7 steps. Rather, be flexible and agile.**
+
+<div class="center">
+    <a href="https://www.careerup.com/" target="_blank">
+        <img src="/images/7steps.png" alt="Cracking the Coding Interview"><br>
+        Copyright of picture belongs to Gayle McDowell.
+    </a>
+</div>
 
 
 ## Common Mistakes in a Coding Interview :x:
