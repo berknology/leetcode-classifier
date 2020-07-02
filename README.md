@@ -11,25 +11,28 @@ Two great online resources have been leveraged to compile the list:
 :coffee: [Buy me a Coffee](#buy-me-a-coffee-coffee)
 
 ## Table of Content
+* Classification of Problems
 
-| ID    | Topic                                         | Number of problems | 
-| ----- | --------------------------------------------- | ------------------ |
-| 01    | [Linked List](#linked-list)                   | 12                 |
-| 02    | [Two pointers](#two-pointers)                 | 17                 |
-| 03    | [Binary Search](#binary-search)               | 18                 |
-| 04    | [Binary Search Tree](#binary-search-tree)     | 14                 |
-| 05    | [Stack and Queue](#stack-and-queue)           | 6                  |
-| 06    | [Hash table and set](#hash-table-and-set)     | 6                  |
-| 07    | [Tree](#tree)                                 | 34                 |
-| 08    | [Divide and Conquer](#divide-and-conquer)     | 6                  |
-| 09    | [Graph](#graph)                               | 25                 |
-| 10    | [Greedy Algorithm](#greedy-algorithm)         | 9                  |
-| 11    | [Backtracking](#backtracking)                 | 22                 |
-| 12    | [Dynamic Programming](#dynamic-programming)   | 19                 |
-| 13    | [Trie](#trie)                                 | 6                  |
-| 14    | [Topological Sorting](#topological-sorting)   | 3                  |
-| 15    | [Union Find](#union-find)                     | 6                  |
-|       |                                               | 203 (total)        |
+    | ID    | Topic                                         | Number of problems | 
+    | ----- | --------------------------------------------- | ------------------ |
+    | 01    | [Linked List](#linked-list)                   | 12                 |
+    | 02    | [Two pointers](#two-pointers)                 | 17                 |
+    | 03    | [Binary Search](#binary-search)               | 18                 |
+    | 04    | [Binary Search Tree](#binary-search-tree)     | 14                 |
+    | 05    | [Stack and Queue](#stack-and-queue)           | 6                  |
+    | 06    | [Hash table and set](#hash-table-and-set)     | 6                  |
+    | 07    | [Tree](#tree)                                 | 34                 |
+    | 08    | [Divide and Conquer](#divide-and-conquer)     | 6                  |
+    | 09    | [Graph](#graph)                               | 25                 |
+    | 10    | [Greedy Algorithm](#greedy-algorithm)         | 9                  |
+    | 11    | [Backtracking](#backtracking)                 | 22                 |
+    | 12    | [Dynamic Programming](#dynamic-programming)   | 19                 |
+    | 13    | [Trie](#trie)                                 | 6                  |
+    | 14    | [Topological Sorting](#topological-sorting)   | 3                  |
+    | 15    | [Union Find](#union-find)                     | 6                  |
+    |       |                                               | 203 (total)        |
+    
+* [Common Mistakes in a Coding Interview](#common-mistakes-in-a-coding-interview-x)
 
 ## Linked List
 
