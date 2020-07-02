@@ -334,6 +334,21 @@ algorithms such as DFS or BFS, and it is highly likely that you are still able t
 [684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | Medium | [1319](https://leetcode.com/problems/number-of-operations-to-make-network-connected/), [990](https://leetcode.com/problems/satisfiability-of-equality-equations/), [721](https://leetcode.com/problems/accounts-merge/), [737](https://leetcode.com/problems/sentence-similarity-ii/), [685](https://leetcode.com/problems/redundant-connection-ii/) | 
 
 
+## Common Mistakes in a Coding Interview :x:
+
+* Did not ask clarifying questions or confirm/repeat the question
+* Could not explain your idea clearly or walk through your solution
+* Did not listen to or take interviewer's suggestions/hints
+* Dived into coding immediately
+* Did not actively engage or interact/discuss with the interviewer
+* Communication was poor or defensive
+* Did not test your algorithm
+* Poor naming of variables or functions
+* Code had bugs or missed edge cases
+* Code was not clean or not modularized
+* Did not respect the interviewer or was too arrogant
+
+
 ## Buy me a Coffee :coffee:
 
 With enough coffee nothing is impossible!
