@@ -407,8 +407,8 @@ questions in 45 minutes, including brief self-introductions and questions, etc. 
 not dogmatically follow the above 7 steps. Rather, be flexible and agile.**
 
 <div style="text-align: center">
+    <img src="/images/7steps.png" alt="Cracking the Coding Interview"><br>
     <a href="https://www.careerup.com/" target="_blank">
-        <img src="/images/7steps.png" alt="Cracking the Coding Interview"><br>
         Copyright of picture belongs to Gayle McDowell.
     </a>
 </div>
