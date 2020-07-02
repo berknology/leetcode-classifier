@@ -337,7 +337,7 @@ algorithms such as DFS or BFS, and it is highly likely that you are still able t
 ## Common Mistakes in a Coding Interview :x:
 
 * Did not ask clarifying questions or confirm/repeat the question
-* Could not explain your idea clearly or walk through your solution
+* Did not explain your idea clearly or walk through your solution
 * Did not listen to or take interviewer's suggestions/hints
 * Dived into coding immediately
 * Did not actively engage or interact/discuss with the interviewer
