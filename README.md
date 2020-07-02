@@ -11,7 +11,7 @@ Two great online resources have been leveraged to compile the list:
 :coffee: [Buy me a Coffee](#buy-me-a-coffee-coffee)
 
 ## Table of Content
-* Classification of Problems
+* Classification of Leetcode Problems
 
     | ID    | Topic                                         | Number of problems | 
     | ----- | --------------------------------------------- | ------------------ |
