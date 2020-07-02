@@ -216,9 +216,10 @@ this [article](https://medium.com/algorithms-and-leetcode/greedy-algorithm-expla
 
 Backtracking is an exhaustive search algorithm for solving combination, permutation, subset, and constraint satisfaction 
 problems. It solves a problem recursively by trying to build a solution incrementally while removing solutions that fail to satisfy the constraints of 
-the problem. The time complexity of backtracking algorithm is generally large, e.g., `C(n, k)` for combination problem 
-and `P(n, k)` for permutation problem [reference](https://betterexplained.com/articles/easy-permutations-and-combinations/). 
-This [video](https://zxi.mytechroad.com/blog/searching/leetcode-78-subsets/) gives a great tutorial on how to implement 
+the problem. The time complexity of backtracking algorithm is generally large, e.g., at least `C(n, k)` for combination 
+problem and at least `P(n, k)` for permutation problem 
+[reference](https://betterexplained.com/articles/easy-permutations-and-combinations/). This 
+[video](https://zxi.mytechroad.com/blog/searching/leetcode-78-subsets/) gives a great tutorial on how to implement 
 backtracking algorithm for combination and permutation problems.
 
 There are three key pillars in backtracking algorithms: (1) the base case, exit condition or the goal to achieve, (2) 
