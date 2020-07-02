@@ -406,7 +406,7 @@ and follow the recommend **seven steps** (illustrated below) to answer any codin
 questions in 45 minutes, including brief self-introductions and questions, etc. Therefore, use your time smartly and do 
 not dogmatically follow the above 7 steps. Rather, be flexible and agile.**
 
-<div class="center">
+<div style="text-align: center">
     <a href="https://www.careerup.com/" target="_blank">
         <img src="/images/7steps.png" alt="Cracking the Coding Interview"><br>
         Copyright of picture belongs to Gayle McDowell.
