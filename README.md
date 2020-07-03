@@ -27,9 +27,8 @@ Two great online resources have been leveraged to compile the list:
     | 10    | [Greedy Algorithm](#greedy-algorithm)         | 9                  |
     | 11    | [Backtracking](#backtracking)                 | 22                 |
     | 12    | [Dynamic Programming](#dynamic-programming)   | 19                 |
-    | 13    | [Trie](#trie)                                 | 6                  |
-    | 14    | [Topological Sorting](#topological-sorting)   | 3                  |
-    | 15    | [Union Find](#union-find)                     | 6                  |
+    | 13    | [Miscellaneous](#miscellaneous)               | 0                  |
+    | 14    | [Advanced Topics](#advanced-topics)           | 15                 |
     |       |                                               | 203 (total)        |
     
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
@@ -272,6 +271,24 @@ proven to be very useful to solve optimal control/decision problems.
 [309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Best Time to Buy and Sell Stock with Cooldown | Medium/Hard | [801](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/) | Multi-state DP
 
 
+## Miscellaneous
+
+#### String
+
+Some of the most famous string problems include anagram, palindrome, substring, and rotation. If you are not familiar 
+with the definition of anagram or palindrome, it might be a good idea to understand these concepts before the interview. 
+
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[242](https://leetcode.com/problems/valid-anagram/) | Valid Anagram | Easy | [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/), [205](https://leetcode.com/problems/isomorphic-strings/) | Hash table
+[409](https://leetcode.com/problems/longest-palindrome/) | Longest Palindrome | Easy |  | Hash table
+[9](https://leetcode.com/problems/palindrome-number/) | Palindrome Number | Easy |  | Convert to string or reverse a number.
+[3](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Longest Substring Without Repeating Characters | Medium |  | Hash set
+[647](https://leetcode.com/problems/palindromic-substrings/) | Palindromic Substrings | Medium | [5](https://leetcode.com/problems/longest-palindromic-substring/) | Expand string centered at each letter
+[796](https://leetcode.com/problems/rotate-string/) | Rotate String | Easy |  | A naive solution is check if `B in A+A`. 
+[151](https://leetcode.com/problems/reverse-words-in-a-string/) | Reverse Words in a String | Medium |  | Reverse each word and reverse the string.
+
 ## Advanced Topics
 
 #### Trie
@@ -391,8 +408,9 @@ and follow the recommend **seven steps** (illustrated below) to answer any codin
 
     Finally, we arrive the step of coding. Imagine you dived into coding immediately after your interviewer gave you 
     the problem description, how many important steps you have missed! Remember to write clean code and modularize your 
-    code with standard variable and function names. [PEP 8](https://www.python.org/dev/peps/pep-0008/) is a great 
-    guideline to write clean, readable, and production-quality code. 
+    code with standard variable and function names. [PEP 8](https://www.python.org/dev/peps/pep-0008/) and 
+    [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) are great guidelines to write clean, 
+    readable, and production-quality code for Python and C++ respectively. 
     
 7. **Test your code**
 
