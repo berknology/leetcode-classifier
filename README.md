@@ -27,9 +27,9 @@ Two great online resources have been leveraged to compile the list:
     | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 9                  |
     | 11    | [Backtracking](#backtracking)                                                 | 22                 |
     | 12    | [Dynamic Programming](#dynamic-programming)                                   | 19                 |
-    | 13    | [Miscellaneous (string, array)](#miscellaneous)                               | 0                  |
+    | 13    | [Miscellaneous (string, array, bit manipulation)](#miscellaneous)             | 24                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
-    |       |                                                                               | 203 (total)        |
+    |       |                                                                               | 227 (total)        |
     
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
 * [Common Mistakes in a Coding Interview](#common-mistakes-in-a-coding-interview-x)
@@ -288,7 +288,6 @@ with the definition of anagram or palindrome, it might be a good idea to underst
 [796](https://leetcode.com/problems/rotate-string/) | Rotate String | Easy |  | A naive solution is check if `B in A+A`. 
 [151](https://leetcode.com/problems/reverse-words-in-a-string/) | Reverse Words in a String | Medium |  | Reverse each word and reverse the string.
 
-
 #### Array
 
 Index plays an important role in array problems. In some problems, values in array are used as indices as well. 
@@ -305,6 +304,32 @@ heap/priority queue and sorting algorithms which have time complexities of `O(nl
 [769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | Medium |  | Iterate through array. If current max is smaller than or equal to current index, the the number of chunks increases by 1.
 [462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves to Equal Array Elements II | Medium | [215](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Quick select algorithm.
 [287](https://leetcode.com/problems/find-the-duplicate-number/) | Find the Duplicate Number | Medium |  | Slow and fast pointers + cycle detection.
+
+#### Bit manipulation
+
+Bit manipulation problems can be very tricky. If you don't know the concept, it is highly likely you will not be able to 
+solve the problem, and there is generally no workaround by using other algorithms. 
+
+The fundamental operations of bit manipulation are:
+```
+x ^ 0s = x      x & 0s = 0      x | 0s = x
+x ^ 1s = ~x     x & 1s = x      x | 1s = 1s
+x ^ x = 0       x & x = x       x | x = x
+```
+where `0s` and `1s` represent a sequence of 0s and 1s respectively. 
+
+There are a few tips that might help solve bit manipulation problems.
+* Leverage `x ^ 0s = x` and `x ^ x = 0`, we can remove or find duplicate number, e.g., `1^1^2 = 2`.
+* `x&(x-1)` and `x&(-x)` will remove and get the last 1 in the binary representation of `x`.
+* The binary representation of `-k` as a n-bit number is `concat(1, 2^(n-1)-k)`.
+* In Python converting an integer represented in any base to a binary number as a **string** can be done using `bin(num)[2:]`. 
+* `x << n` will multiply `x` by 2^n, and `x >> n` will divide `x` by 2^n.
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[136](https://leetcode.com/problems/single-number/) | Single Number | Easy | [268](https://leetcode.com/problems/missing-number/), [260](https://leetcode.com/problems/single-number-iii/) | XOR
+[318](https://leetcode.com/problems/maximum-product-of-word-lengths/) | Maximum Product of Word Lengths | Medium |  |  Use a mask/filter to indicate which letter has appeared for each word.
+[338](https://leetcode.com/problems/counting-bits/) | Counting Bits | Medium |  | DP with `dp[i] = dp[i&(i-1)] + 1`.
 
 
 ## Advanced Topics
