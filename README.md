@@ -13,23 +13,23 @@ Two great online resources have been leveraged to compile the list:
 ## Table of Content
 * Classification of Leetcode Problems
 
-    | ID    | Topic                                         | Number of problems | 
-    | ----- | --------------------------------------------- | ------------------ |
-    | 01    | [Linked List](#linked-list)                   | 12                 |
-    | 02    | [Two pointers](#two-pointers)                 | 17                 |
-    | 03    | [Binary Search](#binary-search)               | 18                 |
-    | 04    | [Binary Search Tree](#binary-search-tree)     | 14                 |
-    | 05    | [Stack and Queue](#stack-and-queue)           | 6                  |
-    | 06    | [Hash table and set](#hash-table-and-set)     | 6                  |
-    | 07    | [Tree](#tree)                                 | 34                 |
-    | 08    | [Divide and Conquer](#divide-and-conquer)     | 6                  |
-    | 09    | [Graph](#graph)                               | 25                 |
-    | 10    | [Greedy Algorithm](#greedy-algorithm)         | 9                  |
-    | 11    | [Backtracking](#backtracking)                 | 22                 |
-    | 12    | [Dynamic Programming](#dynamic-programming)   | 19                 |
-    | 13    | [Miscellaneous](#miscellaneous)               | 0                  |
-    | 14    | [Advanced Topics](#advanced-topics)           | 15                 |
-    |       |                                               | 203 (total)        |
+    | ID    | Topic                                                                         | Number of problems | 
+    | ----- | ----------------------------------------------------------------------------- | ------------------ |
+    | 01    | [Linked List](#linked-list)                                                   | 12                 |
+    | 02    | [Two pointers](#two-pointers)                                                 | 17                 |
+    | 03    | [Binary Search](#binary-search)                                               | 18                 |
+    | 04    | [Binary Search Tree](#binary-search-tree)                                     | 14                 |
+    | 05    | [Stack and Queue](#stack-and-queue)                                           | 6                  |
+    | 06    | [Hash table and set](#hash-table-and-set)                                     | 6                  |
+    | 07    | [Tree](#tree)                                                                 | 34                 |
+    | 08    | [Divide and Conquer](#divide-and-conquer)                                     | 6                  |
+    | 09    | [Graph](#graph)                                                               | 25                 |
+    | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 9                  |
+    | 11    | [Backtracking](#backtracking)                                                 | 22                 |
+    | 12    | [Dynamic Programming](#dynamic-programming)                                   | 19                 |
+    | 13    | [Miscellaneous (string, array)](#miscellaneous)                               | 0                  |
+    | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
+    |       |                                                                               | 203 (total)        |
     
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
 * [Common Mistakes in a Coding Interview](#common-mistakes-in-a-coding-interview-x)
@@ -278,7 +278,6 @@ proven to be very useful to solve optimal control/decision problems.
 Some of the most famous string problems include anagram, palindrome, substring, and rotation. If you are not familiar 
 with the definition of anagram or palindrome, it might be a good idea to understand these concepts before the interview. 
 
-
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
 [242](https://leetcode.com/problems/valid-anagram/) | Valid Anagram | Easy | [438](https://leetcode.com/problems/find-all-anagrams-in-a-string/), [205](https://leetcode.com/problems/isomorphic-strings/) | Hash table
@@ -288,6 +287,25 @@ with the definition of anagram or palindrome, it might be a good idea to underst
 [647](https://leetcode.com/problems/palindromic-substrings/) | Palindromic Substrings | Medium | [5](https://leetcode.com/problems/longest-palindromic-substring/) | Expand string centered at each letter
 [796](https://leetcode.com/problems/rotate-string/) | Rotate String | Easy |  | A naive solution is check if `B in A+A`. 
 [151](https://leetcode.com/problems/reverse-words-in-a-string/) | Reverse Words in a String | Medium |  | Reverse each word and reverse the string.
+
+
+#### Array
+
+Index plays an important role in array problems. In some problems, values in array are used as indices as well. 
+Quick select is a great algorithm to find the k-th smallest element in an array in `O(n)` time, which outperforms 
+heap/priority queue and sorting algorithms which have time complexities of `O(nlog(k))` and `O(nlog(n))` respectively.
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[566](https://leetcode.com/problems/reshape-the-matrix/) | Reshape the Matrix | Easy |  | Have a counter `cnt`, and the row index will be `cnt//c` and the column index will be `cnt%c`.
+[645](https://leetcode.com/problems/set-mismatch/) | Set Mismatch | Easy |  | Hash table
+[697](https://leetcode.com/problems/degree-of-an-array/) | Degree of an Array | Easy/Medium |  | Hash table.
+[422](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | Find All Duplicates in an Array | Medium |  | Leverage the input list, and use negation.
+[565](https://leetcode.com/problems/array-nesting/) | Array Nesting | Medium |  | Use input as visited array.
+[769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | Medium |  | Iterate through array. If current max is smaller than or equal to current index, the the number of chunks increases by 1.
+[462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves to Equal Array Elements II | Medium | [215](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Quick select algorithm.
+[287](https://leetcode.com/problems/find-the-duplicate-number/) | Find the Duplicate Number | Medium |  | Slow and fast pointers + cycle detection.
+
 
 ## Advanced Topics
 
