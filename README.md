@@ -27,9 +27,9 @@ Two great online resources have been leveraged to compile the list:
     | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 9                  |
     | 11    | [Backtracking](#backtracking)                                                 | 22                 |
     | 12    | [Dynamic Programming](#dynamic-programming)                                   | 19                 |
-    | 13    | [Miscellaneous (string, array, bit manipulation)](#miscellaneous)             | 24                 |
+    | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
-    |       |                                                                               | 227 (total)        |
+    |       |                                                                               | 238 (total)        |
     
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
 * [Common Mistakes in a Coding Interview](#common-mistakes-in-a-coding-interview-x)
@@ -304,6 +304,25 @@ heap/priority queue and sorting algorithms which have time complexities of `O(nl
 [769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | Medium |  | Iterate through array. If current max is smaller than or equal to current index, the the number of chunks increases by 1.
 [462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves to Equal Array Elements II | Medium | [215](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Quick select algorithm.
 [287](https://leetcode.com/problems/find-the-duplicate-number/) | Find the Duplicate Number | Medium |  | Slow and fast pointers + cycle detection.
+
+#### Math
+
+Typical math problems include finding prime numbers, gcd (greatest common divisor), lcm (least common multiple), 
+converting base, and check if a number is a power of 2/3/4, etc.
+
+There are a couple of tips related to gcd and lcm.
+* find gcd, `def gcd(a, b): return a if b == 0 else gcd(b, a%b)`, time complexity `O(log(min(a, b)))`.
+* find lcm, `def lcm(a, b): return a*b//gcd(a, b)`.
+
+ ID | Problem Name | Difficulty | Similar problems | Main Idea
+--- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
+[204](https://leetcode.com/problems/count-primes/) | Count Primes | Easy |  | Sieve of Eratosthenes
+[504](https://leetcode.com/problems/base-7/) | Base 7 | Easy | [405](https://leetcode.com/problems/convert-a-number-to-hexadecimal/), [168](https://leetcode.com/problems/excel-sheet-column-title/) | Repeatedly use `digit = n%base` and `n = n//base` where integer `base` is the target base.
+[67](https://leetcode.com/problems/add-binary/) | Add Binary | Easy | [415](https://leetcode.com/problems/add-strings/) | 
+[367](https://leetcode.com/problems/valid-perfect-square/) | Valid Perfect Square | Easy |  | Binary search with time complexity `O(log(n))` or `1+3+...+(2n-1) = n*n` with time complexity `O(sqrt(n))`.
+[326](https://leetcode.com/problems/power-of-three/) | Power of Three | Easy | [342](https://leetcode.com/problems/power-of-four/) | 
+[628](https://leetcode.com/problems/maximum-product-of-three-numbers/) | Maximum Product of Three Numbers | easy |  | The max product is `max(max1*max2*max3, max1*min1*min2))`.
+[238](https://leetcode.com/problems/product-of-array-except-self/) | Product of Array Except Self | Medium |  | Leverage the input to have `O(1)` space and do `cummulative product` from left to right and right to left. 
 
 #### Bit manipulation
 
