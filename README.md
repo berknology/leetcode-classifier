@@ -10,7 +10,7 @@ Two great online resources have been leveraged to compile the list:
 **A day in the life of a software engineer: 6 hours of coffee time + 2 hours of coding.** 
 :coffee: [Buy me a Coffee](#buy-me-a-coffee-coffee)
 
-## Table of Content
+## Table of Content :page_facing_up:
 * Classification of Leetcode Problems
 
     | ID    | Topic                                                                         | Number of problems | 
@@ -416,6 +416,38 @@ algorithms such as DFS or BFS, and it is highly likely that you are still able t
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
 [684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | Medium | [1319](https://leetcode.com/problems/number-of-operations-to-make-network-connected/), [990](https://leetcode.com/problems/satisfiability-of-equality-equations/), [721](https://leetcode.com/problems/accounts-merge/), [737](https://leetcode.com/problems/sentence-similarity-ii/), [685](https://leetcode.com/problems/redundant-connection-ii/) | 
+
+
+## Complexity of an Algorithm :chart_with_upwards_trend:
+
+Algorithm complexity is a measure the amount of time and/or space required by an algorithm as a function of the input 
+size. The time complexity is the computational complexity that describes the amount of time it takes to run an algorithm 
+and the space complexity is amount of memory space required by the algorithm. 
+
+The following picture depicts the Big O complexity of an algorithm as a function of input size `n`.
+
+<div align="center">
+    <img src="/images/big_o_complexity.jpg" alt="Big O Complexity"><br>
+    <a href="https://www.bigocheatsheet.com/" target="_blank">
+        Copyright of picture belongs to www.bigocheatsheet.com.
+    </a>
+</div>
+
+We observe from the above picture that when `n` is large, 
+```
+O(n!) > O(2^n) > O(n^2) > O(nlog(n)) > O(n) > O(log(n)) > O(1)
+``` 
+which indicate the order of complexity in decreasing order as: 
+factorial, exponential, polynomial, linearithmic, linear, logarithmic, and constant. 
+
+The following table summarizes the complexity of common algorithms.
+
+| Algorithm  | Best Time    | Average Time | Worst Time   | Worst Space | Comments                                  | 
+| ---------- | ------------ | ------------ | -----------  | ----------- | ----------------------------------------- |
+| Quick sort | `O(nlog(n))` | `O(nlog(n))` | `O(n^2)`     | `O(n)`      | Unstable                                  |
+| Merge sort | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable                                    |
+| Tim sort   | `O(n)`       | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable. Python uses Tim sort              |
+| Heap sort  | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(1)`      | Unstable                                  |
 
 
 ## How to Approach a Coding Question :heavy_check_mark:
