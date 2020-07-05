@@ -30,7 +30,8 @@ Two great online resources have been leveraged to compile the list:
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
     |       |                                                                               | 242 (total)        |
-    
+
+* [Algorithm Complexity](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
 * [Common Mistakes in a Coding Interview](#common-mistakes-in-a-coding-interview-x)
 
