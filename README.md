@@ -26,10 +26,10 @@ Two great online resources have been leveraged to compile the list:
     | 09    | [Graph](#graph)                                                               | 25                 |
     | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 9                  |
     | 11    | [Backtracking](#backtracking)                                                 | 22                 |
-    | 12    | [Dynamic Programming](#dynamic-programming)                                   | 19                 |
+    | 12    | [Dynamic Programming](#dynamic-programming)                                   | 23                 |
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
-    |       |                                                                               | 238 (total)        |
+    |       |                                                                               | 242 (total)        |
     
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
 * [Common Mistakes in a Coding Interview](#common-mistakes-in-a-coding-interview-x)
