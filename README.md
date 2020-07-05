@@ -447,7 +447,7 @@ The following table summarizes the complexity of common algorithms.
 | ---------- | ------------ | ------------ | -----------  | ----------- | ----------------------------------------- |
 | Quick sort | `O(nlog(n))` | `O(nlog(n))` | `O(n^2)`     | `O(n)`      | Unstable                                  |
 | Merge sort | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable                                    |
-| Tim sort   | `O(n)`       | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable. Python uses Tim sort              |
+| Tim sort   | `O(n)`       | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable. Python uses Tim sort.             |
 | Heap sort  | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(1)`      | Unstable                                  |
 
 
