@@ -31,7 +31,7 @@ Two great online resources have been leveraged to compile the list:
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
     |       |                                                                               | 249 (total)        |
 
-* [Algorithm Complexity](#complexity-of-an-algorithm-chart_with_upwards_trend)    
+* [Time and Space Complexity of Algorithms](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
 * [Common Mistakes in a Coding Interview](#common-mistakes-in-a-coding-interview-x)
 
@@ -455,7 +455,8 @@ The following table summarizes the complexity of common algorithms.
 | Binary Tree BFS   |              |              | `O(n)`       | `O(w)`      | `w` is the maximum width of the tree      |
 | Graph DFS         |              |              | `O(V+E)`     | `O(V)`      | `V` and `E` are numbers of vertices and edges respectively |
 | Graph BFS         |              |              | `O(V+E)`     | `O(V)`      |                                           |
-
+| Permutation       |              |              | `O(n!)`      | `O(n)`      | Permutation (backtracking)                |
+| Combination       |              |              | `O(2^n)`     | `O(n)`      | Combination (backtracking)                |
 
 Many leetcode questions not only present the problem description, but also give the constraint of input size. It is 
 extremely interesting to see that we can infer the time complexity of the algorithm we are supposed to develop based on 
