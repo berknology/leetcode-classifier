@@ -461,7 +461,7 @@ extremely interesting to see that we can infer the time complexity of the algori
 the input size. The following picture shows the time complexity versus the input size. For example, if the input size is 
 less than 10, then this problem is probably a backtracking (permutation) problem. Please refer to this great 
 [video](https://zxi.mytechroad.com/blog/sp/input-size-v-s-time-complexity/) for details. However, such information might 
-not be available in a coding interview. But who knows.
+not be available in a coding interview. But it doesn't hurt to ask.
 
 <div align="center">
     <img src="/images/time_complexity_vs_input_size.jpg" alt="Time Complexity versus Input Size"><br>
