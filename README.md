@@ -443,12 +443,31 @@ factorial, exponential, polynomial, linearithmic, linear, logarithmic, and const
 
 The following table summarizes the complexity of common algorithms.
 
-| Algorithm  | Best Time    | Average Time | Worst Time   | Worst Space | Comments                                  | 
-| ---------- | ------------ | ------------ | -----------  | ----------- | ----------------------------------------- |
-| Quick sort | `O(nlog(n))` | `O(nlog(n))` | `O(n^2)`     | `O(n)`      | Unstable                                  |
-| Merge sort | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable                                    |
-| Tim sort   | `O(n)`       | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable. Python uses Tim sort.             |
-| Heap sort  | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(1)`      | Unstable                                  |
+| Algorithm         | Best Time    | Average Time | Worst Time   | Worst Space | Comments                                  | 
+| ----------------- | ------------ | ------------ | -----------  | ----------- | ----------------------------------------- |
+| Quick sort        | `O(nlog(n))` | `O(nlog(n))` | `O(n^2)`     | `O(n)`      | Unstable                                  |
+| Merge sort        | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable                                    |
+| Tim sort          | `O(n)`       | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable. Python uses Tim sort.             |
+| Heap sort         | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(1)`      | Unstable                                  |
+| Binary search     |              |              | `O(log(n))`  | `O(1)`      |                                           |
+| Binary Tree DFS   |              |              | `O(n)`       | `O(h)`      | `h` is the height of the tree             |
+| Binary Tree BFS   |              |              | `O(n)`       | `O(w)`      | `w` is the maximum width of the tree      |
+| Graph DFS         |              |              | `O(V+E)`     | `O(V)`      | `V` and `E` are numbers of vertices and edges respectively |
+| Graph BFS         |              |              | `O(V+E)`     | `O(V)`      |                                           |
+
+
+Many leetcode questions not only present the problem description, but also give the constraint of the input size. It is 
+extremely interesting that we can even infer the time complexity of the algorithm we are supposed to develop based on 
+the input size. The following picture shows the time complexity versus the input size. For example, if the input size is 
+less than 10, then this problem is probably a backtracking (permutation) problem. Please refer to this great 
+[video](https://zxi.mytechroad.com/blog/sp/input-size-v-s-time-complexity/) for details. 
+
+<div align="center">
+    <img src="/images/time_complexity_vs_input_size.jpg" alt="Time Complexity versus Input Size"><br>
+    <a href="https://zxi.mytechroad.com/blog/sp/input-size-v-s-time-complexity/" target="_blank">
+        Copyright of picture belongs to Huahua.
+    </a>
+</div>
 
 
 ## How to Approach a Coding Question :heavy_check_mark:
