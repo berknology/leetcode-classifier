@@ -456,11 +456,12 @@ The following table summarizes the complexity of common algorithms.
 | Graph BFS         |              |              | `O(V+E)`     | `O(V)`      |                                           |
 
 
-Many leetcode questions not only present the problem description, but also give the constraint of the input size. It is 
-extremely interesting that we can even infer the time complexity of the algorithm we are supposed to develop based on 
+Many leetcode questions not only present the problem description, but also give the constraint of input size. It is 
+extremely interesting to see that we can infer the time complexity of the algorithm we are supposed to develop based on 
 the input size. The following picture shows the time complexity versus the input size. For example, if the input size is 
 less than 10, then this problem is probably a backtracking (permutation) problem. Please refer to this great 
-[video](https://zxi.mytechroad.com/blog/sp/input-size-v-s-time-complexity/) for details. 
+[video](https://zxi.mytechroad.com/blog/sp/input-size-v-s-time-complexity/) for details. However, such information might 
+not be available in a coding interview. But who knows.
 
 <div align="center">
     <img src="/images/time_complexity_vs_input_size.jpg" alt="Time Complexity versus Input Size"><br>
