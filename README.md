@@ -26,10 +26,10 @@ Two great online resources have been leveraged to compile the list:
     | 09    | [Graph](#graph)                                                               | 25                 |
     | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 9                  |
     | 11    | [Backtracking](#backtracking)                                                 | 22                 |
-    | 12    | [Dynamic Programming](#dynamic-programming)                                   | 23                 |
+    | 12    | [Dynamic Programming](#dynamic-programming)                                   | 30                 |
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
-    |       |                                                                               | 242 (total)        |
+    |       |                                                                               | 249 (total)        |
 
 * [Algorithm Complexity](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
@@ -267,6 +267,7 @@ proven to be very useful to solve optimal control/decision problems.
 [70](https://leetcode.com/problems/climbing-stairs/) | Climbing Stairs | Easy | [746](https://leetcode.com/problems/min-cost-climbing-stairs/), [1137](https://leetcode.com/problems/n-th-tribonacci-number/), [53](https://leetcode.com/problems/maximum-subarray/) | Simple DP
 [198](https://leetcode.com/problems/house-robber/) | House Robber | Easy | [213](https://leetcode.com/problems/house-robber-ii/), [337](https://leetcode.com/problems/house-robber-iii/), [740](https://leetcode.com/problems/delete-and-earn/) | For Problem 213, try twice, one without the first house and one without the last house. Then find the maximum of them. One way to solve Problem 740 is to convert it into a house robber problem.
 [1218](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) | Longest Arithmetic Subsequence of Given Difference | Medium | [413](https://leetcode.com/problems/arithmetic-slices/), [300](https://leetcode.com/problems/longest-increasing-subsequence/), [646](https://leetcode.com/problems/maximum-length-of-pair-chain/), [1143](https://leetcode.com/problems/longest-common-subsequence/) | For Problem 1218, use Hash table + DP
+[416](https://leetcode.com/problems/partition-equal-subset-sum/) | Partition Equal Subset Sum | Medium | [494](https://leetcode.com/problems/target-sum/), [474](https://leetcode.com/problems/ones-and-zeroes/), [322](https://leetcode.com/problems/coin-change/), [518](https://leetcode.com/problems/coin-change-2/), [139](https://leetcode.com/problems/word-break/), [377](https://leetcode.com/problems/combination-sum-iv/) | Knapsack problem.
 [62](https://leetcode.com/problems/unique-paths/) | Unique Paths | Medium | [63](https://leetcode.com/problems/unique-paths-ii/), [64](https://leetcode.com/problems/minimum-path-sum/), [120](https://leetcode.com/problems/triangle/), [931](https://leetcode.com/problems/minimum-falling-path-sum/solution/) | DP in 2-dimensional space. Deal with the boundaries first for Problems 62-64. 
 [85](https://leetcode.com/problems/maximal-rectangle/) | Maximal Rectangle | Hard/Medium | [221](https://leetcode.com/problems/maximal-square/), [1277](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) | Leverage the solution to Problem [84](https://leetcode.com/problems/largest-rectangle-in-histogram/) using stack for Problems 85 and 221.
 [309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Best Time to Buy and Sell Stock with Cooldown | Medium/Hard | [801](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/) | Multi-state DP
