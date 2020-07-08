@@ -34,6 +34,7 @@ Two great online resources have been leveraged to compile the list:
 * [Time and Space Complexity of Algorithms](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
 * [Common Mistakes in a Coding Interview](#common-mistakes-in-a-coding-interview-x)
+* [How to Practice and do Mock Interviews](#practice-practice-and-practice)
 
 
 ## Linked List
@@ -562,6 +563,18 @@ not dogmatically follow the above 7 steps. Rather, be flexible and agile.**
 * Code had bugs or missed edge cases
 * Code was not clean or not modularized
 * Did not respect the interviewer or was too arrogant
+
+
+## Practice, Practice, and Practice
+Now you have mastered the skills and tips to crack the coding interviews, it is time to practice them in mock interviews 
+before you take a real job interview. This step is extremely valuable since coding under pressure is very different and 
+you need practice to be at your best. 
+
+You can start by pairing a coding buddy and give each other two medium-level questions to solve in 45 minutes, and give 
+feedback at the end. [CoderPad](https://coderpad.io/) is a great online collaborative coding environment for mock interviews. It is also used 
+by many big tech companies for real interviews. After that, you might want to leverage 
+[Pramp.com](https://www.pramp.com/invt/M6olAymmybCmyO9mZLLV) and [interviewing.io](https://interviewing.io/) to practice 
+mock interviews with anonymous people, which will give you the real interview feeling. 
 
 
 ## Buy me a Coffee :coffee:
