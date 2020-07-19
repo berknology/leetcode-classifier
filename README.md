@@ -128,7 +128,7 @@ will not list such problems in this list.
 
 ## Hash table and set
 Hash table/set is one of the most frequently asked data structures in coding interviews. When stuck, try hash table. 
-Hash table is also very useful to make time-space trade off. They enable `O(1)` time of searching. 
+Hash table and hash set are also very useful to make time-space trade off. They enable `O(1)` time of searching. 
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
