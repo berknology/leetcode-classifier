@@ -122,7 +122,7 @@ will not list such problems in this list.
 [155](https://leetcode.com/problems/min-stack/) | Min Stack | Easy |  | Push a tuple (x, minimum) into stack. 
 [232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue using Stacks | Easy |  | Be careful about the amortized time complexity of each operation. Use two stacks. 
 [20](https://leetcode.com/problems/valid-parentheses/) | Valid Parentheses | Easy | [921](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/), [1249](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Be careful about the type of parentheses. Maybe use a dict to simplify code.
-[739](https://leetcode.com/problems/daily-temperatures/) | Daily Temperatures | Medium |  | Iterate through array, and pop only when current temp greater than that at the top of the stack. Otherwise, push.
+[739](https://leetcode.com/problems/daily-temperatures/) | Daily Temperatures | Medium |  | Iterate through array, and pop util current temp smaller than or equal to temp at the top of the stack. Otherwise, push.
 [503](https://leetcode.com/problems/next-greater-element-ii/) | Next Greater Element II | Medium | [496](https://leetcode.com/problems/next-greater-element-i/) | Iterate trough the concatenated array, e.g., given a list `nums`, iterate through `nums+nums`.
 
 
