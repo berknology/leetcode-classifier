@@ -21,7 +21,7 @@ Two great online resources have been leveraged to compile the list:
     | 04    | [Binary Search Tree](#binary-search-tree)                                     | 14                 |
     | 05    | [Stack and Queue](#stack-and-queue)                                           | 8                  |
     | 06    | [Hash table and set](#hash-table-and-set)                                     | 6                  |
-    | 07    | [Tree](#tree)                                                                 | 34                 |
+    | 07    | [Tree](#tree)                                                                 | 37                 |
     | 08    | [Divide and Conquer](#divide-and-conquer)                                     | 6                  |
     | 09    | [Graph](#graph)                                                               | 25                 |
     | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 9                  |
@@ -29,7 +29,7 @@ Two great online resources have been leveraged to compile the list:
     | 12    | [Dynamic Programming](#dynamic-programming)                                   | 30                 |
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
-    |       |                                                                               | 251 (total)        |
+    |       |                                                                               | 254 (total)        |
 
 * [Time and Space Complexity of Algorithms](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
@@ -157,7 +157,7 @@ space, where `w` is the maximum width of a tree. Moreover, it is very important 
 [572](https://leetcode.com/problems/subtree-of-another-tree/) | Subtree of Another Tree | Easy/Medium | [687](https://leetcode.com/problems/longest-univalue-path/) | Recursively check if `t` is the same tree with a tree rooted at the current node, or if `t` is a subtree rooted at current node's left or right child. Problem 687 can have better time complexity by adopting a different idea. 
 [102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Binary Tree Level Order Traversal | Medium | [637](https://leetcode.com/problems/average-of-levels-in-binary-tree/), [513](https://leetcode.com/problems/find-bottom-left-tree-value/), [429](https://leetcode.com/problems/n-ary-tree-level-order-traversal/), [1302](https://leetcode.com/problems/deepest-leaves-sum/), [872](https://leetcode.com/problems/leaf-similar-trees/) | Level-order traversal. Use BFS or `defaultdict[list]` to add node into corresponding level. 
 [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | Binary Tree Preorder Traversal | Medium | [589](https://leetcode.com/problems/n-ary-tree-preorder-traversal/), [145](https://leetcode.com/problems/binary-tree-postorder-traversal/), [590](https://leetcode.com/problems/n-ary-tree-postorder-traversal/), [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Recursively is trivial, but iteratively is very complicated. IMO, iteratively in-order traversal is the hardest.
-[297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Serialize and Deserialize Binary Tree | Hard | [449](https://leetcode.com/problems/serialize-and-deserialize-bst/) | In the binary tree problem, we need to have "null" indicator to represent null node in the serialized string, while BST does not. BST problem uses pre-order traversal to serialize and deserialize by recursively building trees by checking lower and upper bounds for subtrees. 
+[297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Serialize and Deserialize Binary Tree | Hard | [449](https://leetcode.com/problems/serialize-and-deserialize-bst/), [1008](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/), [106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/), [105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | In the binary tree problem, we need to have "null" indicator to represent null node in the serialized string, while BST does not. BST problem uses pre-order traversal to serialize and deserialize by recursively building trees by checking lower and upper bounds for subtrees. 
 [968](https://leetcode.com/problems/binary-tree-cameras/) | Binary Tree Cameras | Hard | [979](https://leetcode.com/problems/distribute-coins-in-binary-tree/) | Bottom up. DFS + greedy. 
 
 
