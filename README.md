@@ -24,12 +24,12 @@ Two great online resources have been leveraged to compile the list:
     | 07    | [Tree](#tree)                                                                 | 37                 |
     | 08    | [Divide and Conquer](#divide-and-conquer)                                     | 6                  |
     | 09    | [Graph](#graph)                                                               | 25                 |
-    | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 9                  |
+    | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 10                 |
     | 11    | [Backtracking](#backtracking)                                                 | 22                 |
     | 12    | [Dynamic Programming](#dynamic-programming)                                   | 30                 |
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
-    |       |                                                                               | 254 (total)        |
+    |       |                                                                               | 255 (total)        |
 
 * [Time and Space Complexity of Algorithms](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
@@ -212,8 +212,8 @@ this [article](https://medium.com/algorithms-and-leetcode/greedy-algorithm-expla
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
 [455](https://leetcode.com/problems/assign-cookies/) | Assign Cookies | Easy |  | **Have kids and you will know** :joy:
 [605](https://leetcode.com/problems/can-place-flowers/) | Can Place Flowers | Easy |  | Pad each side of `flowerbed` by `0`, and iteratively check if we can place flower by `flowerbed[i-1] == flowerbed[i] == flowerbed[i+1] == 0`.
-[121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Best Time to Buy and Sell Stock | Easy | [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Keep track of the min price. You might have solved the problem without realizing it is a greedy algorithm problem. Greedy algorithm allows you to follow you instinct. 
-[53](https://leetcode.com/problems/maximum-subarray/) | Maximum Subarray | Easy/Medium |  | Repeatedly check current sum `cur_sum = max(cur_sum + num, num)`. There is a blur boundary between greedy algorithm and DP for this problem.
+[121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Best Time to Buy and Sell Stock | Easy | [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | Keep track of the min price. You might have solved the problem without realizing it is a greedy algorithm problem. Greedy algorithm allows you to follow your instinct. 
+[53](https://leetcode.com/problems/maximum-subarray/) | Maximum Subarray | Easy/Medium | [152](https://leetcode.com/problems/maximum-product-subarray/) | Repeatedly check current sum `cur_sum = max(cur_sum + num, num)`. There is a blur boundary between greedy algorithm and DP for this problem.
 [435](https://leetcode.com/problems/non-overlapping-intervals/) | Non-overlapping Intervals | Medium | [452](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Sort the intervals by the end point of each interval.
 [763](https://leetcode.com/problems/partition-labels/) | Partition Labels | Medium |  | Use a hash table to keep track of the last time (largest index) a letter appeared.
 [406](https://leetcode.com/problems/queue-reconstruction-by-height/) | Queue Reconstruction by Height | Medium |  | Sort the list by height `h` in descending order and number of people `k` in ascending order. Construct a queue `queue` by iteratively `queue.insert(k, h)` for each pair in the sorted list. 
