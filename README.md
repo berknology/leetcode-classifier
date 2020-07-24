@@ -342,9 +342,9 @@ where `0s` and `1s` represent a sequence of 0s and 1s respectively.
 
 There are a few tips that might help solve bit manipulation problems.
 * Leverage `x ^ 0s = x` and `x ^ x = 0`, we can remove or find duplicate number, e.g., `1^1^2 = 2`.
-* `x&(x-1)` and `x&(-x)` will remove and get the last 1 in the binary representation of `x`.
+* `x&(x-1)` will remove the last 1 in the binary representation of `x`, and `x&(-x)` will get the last 1 in the binary representation.
 * The binary representation of `-k` as a n-bit number is `concat(1, 2^(n-1)-k)`.
-* In Python converting an integer represented in any base to a binary number as a **string** can be done using `bin(num)[2:]`. 
+* In Python converting an integer represented in any base to a binary number as a **string** can be done using `bin(num)`. Be careful when `num` is negative.
 * `x << n` will multiply `x` by 2^n, and `x >> n` will divide `x` by 2^n.
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
