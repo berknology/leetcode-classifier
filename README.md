@@ -325,7 +325,7 @@ There are a couple of tips related to gcd and lcm.
 [367](https://leetcode.com/problems/valid-perfect-square/) | Valid Perfect Square | Easy |  | Binary search with time complexity `O(log(n))` or `1+3+...+(2n-1) = n*n` with time complexity `O(sqrt(n))`.
 [326](https://leetcode.com/problems/power-of-three/) | Power of Three | Easy | [342](https://leetcode.com/problems/power-of-four/) | 
 [628](https://leetcode.com/problems/maximum-product-of-three-numbers/) | Maximum Product of Three Numbers | easy |  | The max product is `max(max1*max2*max3, max1*min1*min2))`.
-[238](https://leetcode.com/problems/product-of-array-except-self/) | Product of Array Except Self | Medium |  | Leverage the input to have `O(1)` space and do `cummulative product` from left to right and right to left. 
+[238](https://leetcode.com/problems/product-of-array-except-self/) | Product of Array Except Self | Medium |  | Leverage the output array to have `O(1)` space and do `cummulative product` from left to right and right to left. 
 
 #### Bit manipulation
 
