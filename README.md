@@ -386,7 +386,7 @@ to 0, add it to the queue.
 
 Union Find algorithm or disjoint-set data structure aims to find if two nodes are in the same set in amortized `O(1)` 
 time. There are two operations in the `UnionFind` class: `find` and `union`. To enable amortized `O(1)` time of `find`, 
-two optimizations needs to be done for the `UnionFind` class: path compression and union by rank.
+two optimizations need to be done for the `UnionFind` class: path compression and union by rank.
 
 A python implementation of the disjoint set data structure is given below.
 ```python
@@ -413,8 +413,8 @@ class UnionFind:
         return True
 ```
 
-**In a coding interview, when asked a Union Find problem and you are not familiar with this algorithm, try other 
-algorithms such as DFS or BFS, and it is highly likely that you are still able to solve the problem.**
+**In a coding interview, if you are asked a Union Find problem and you are not familiar with this algorithm, try other 
+algorithms such as DFS or BFS, and it is highly likely that you will be still able to solve the problem.**
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
