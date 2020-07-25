@@ -482,11 +482,11 @@ and follow the recommend **seven steps** (illustrated below) to answer any codin
 
 1. **Listen carefully to the problem description and ask clarifying questions**
 
-    Don't miss any important information/keyword which might help you find an optimal solution. Most of the times, the 
-    interviewer will type the problem description into the collaborative coding environment. Do ask questions to clarify 
-    all your doubts such as input, output, edge cases, and constraints, etc. Even the problem description is crystal 
-    clear to you or you have solved this problem before, it is still helpful to repeat the problem to the interviewer in 
-    a different way to make sure you really understand it and engage the interviewer.
+    Don't miss any important information/keyword which might help you find a(n) (optimal) solution. Most of the time, 
+    the interviewer will type the problem description into the collaborative coding environment. Do ask questions to 
+    clarify all your doubts such as input, output, edge cases, and constraints, etc. Even the problem description is 
+    crystal clear to you or you have solved this problem before, it is still helpful to repeat the problem to the 
+    interviewer in a different way to make sure you really understand it and engage the interviewer.
 
 2. **Present a nontrivial example if it is not given in the problem description**
 
@@ -501,7 +501,7 @@ and follow the recommend **seven steps** (illustrated below) to answer any codin
     Do not dive into coding immediately. First give an intuitive and naive solution and explain 
     the time and space complexity, then engage/discuss with the interviewer to see if you can optimize it. Note that you 
     need to **lead** the conversation. The motivation for this step is that it is the natural way to solve a problem 
-    that you have never seen before. The interviewer cares more about how you got to the optimal solution than the 
+    that you have never seen before. The interviewer cares more about how you get to the optimal solution than the 
     solution itself. If you rush to present an optimal solution immediately without any explanation, it makes the 
     impression that you have solved this problem before, and you are copying what you have memorized. Note that 
     companies try to hire developers with great problem-solving skills instead of people with good memory.
@@ -524,9 +524,9 @@ and follow the recommend **seven steps** (illustrated below) to answer any codin
     
 6. **Implement your algorithm and solution**
 
-    Finally, we arrive the step of coding. Imagine you dived into coding immediately after your interviewer gave you 
-    the problem description, how many important steps you have missed! Remember to write clean code and modularize your 
-    code with standard variable and function names. [PEP 8](https://www.python.org/dev/peps/pep-0008/) and 
+    Finally, we arrive the step of coding. **Imagine you dived into coding immediately after your interviewer gave you 
+    the problem description, how many important steps you have missed!** Remember to write clean code and modularize 
+    your code with standard variable and function names. [PEP 8](https://www.python.org/dev/peps/pep-0008/) and 
     [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) are great guidelines to write clean, 
     readable, and production-quality code for Python and C++ respectively. 
     
