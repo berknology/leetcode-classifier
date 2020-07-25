@@ -460,9 +460,9 @@ The following table summarizes the complexity of common algorithms.
 | Combination       |              |              | `O(2^n)`     | `O(n)`      | Combination (backtracking)                |
 
 Many leetcode questions not only present the problem description, but also give the constraint of input size. It is 
-extremely interesting to see that we can infer the time complexity of the algorithm we are supposed to develop based on 
-the input size. The following picture shows the time complexity versus the input size. For example, if the input size is 
-less than 10, then this problem is probably a backtracking (permutation) problem. Please refer to this great 
+interesting to see that we can infer the time complexity of the algorithm we are supposed to develop based on the input 
+size. The following picture shows the time complexity versus the input size. For example, if the input size is less than 
+10, then this problem is probably a backtracking (permutation) problem. Please refer to this great 
 [video](https://zxi.mytechroad.com/blog/sp/input-size-v-s-time-complexity/) for details. However, such information might 
 not be available in a coding interview. But it doesn't hurt to ask.
 
