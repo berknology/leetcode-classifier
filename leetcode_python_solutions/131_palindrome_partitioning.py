@@ -13,3 +13,9 @@ class Solution:
             if sub_str[::-1] != sub_str:
                 continue
             self.backtrack(s, i+1, path+[sub_str], ans)
+
+
+"""
+Time complexity: O(2^n), where n is the length of the string.
+Space complexity: O(n). We need to consider the implicit stack used in recursion
+"""
