@@ -19,3 +19,9 @@ class Solution:
                 return True
         board[i][j] = temp
         return False
+
+
+"""
+Time complexity: O(mn4^k), where m is the number of rows, n is the number of columns, and k is the length of word
+Space complexity: O(mn). We need to consider the implicit stack used in recursion
+"""
