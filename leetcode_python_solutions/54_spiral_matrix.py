@@ -23,5 +23,5 @@ class Solution:
 
 """
 Time complexity: O(mn), where m is the number of rows, n is the number of columns
-Space complexity: O(1)
+Space complexity: O(mn)
 """
