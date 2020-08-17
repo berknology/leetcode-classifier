@@ -140,19 +140,19 @@ Usage::
 """
 ```
 
-### Useful Tools
-
-Personally, I recommend to use PyCharm IDE, which will automatically check PEP 8 conventions for your code. Open source 
-libraries such as [autopep8](https://github.com/hhatto/autopep8), [pep8](https://github.com/treyhunner/pep8), 
-and [flake8](https://gitlab.com/pycqa/flake8) are also very helpful to check if your code follows the PEP 8 best 
-practices and conventions.
-
 ### Maximum Line Length
 
 Limit all lines to a maximum of 79 characters (72 for docstrings/comments). 
 The preferred way of wrapping long lines is by using Python's implied line continuation inside parentheses, brackets 
 and braces. Long lines can be broken over multiple lines by wrapping expressions in parentheses. These should be used in 
 preference to using a backslash for line continuation.
+
+### Useful Tools
+
+Personally, I recommend to use PyCharm IDE, which will automatically check PEP 8 conventions for your code. Open source 
+libraries such as [autopep8](https://github.com/hhatto/autopep8), [pep8](https://github.com/treyhunner/pep8), 
+and [flake8](https://gitlab.com/pycqa/flake8) are also very helpful to check if your code follows the PEP 8 best 
+practices and conventions.
 
 
 ## Pull Request & Code Review
