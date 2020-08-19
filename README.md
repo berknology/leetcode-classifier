@@ -16,7 +16,7 @@ Two great online resources have been leveraged to compile the list:
     | ID    | Topic                                                                         | Number of problems | 
     | ----- | ----------------------------------------------------------------------------- | ------------------ |
     | 01    | [Linked List](#linked-list)                                                   | 12                 |
-    | 02    | [Two pointers](#two-pointers)                                                 | 17                 |
+    | 02    | [Two pointers](#two-pointers)                                                 | 18                 |
     | 03    | [Binary Search](#binary-search)                                               | 18                 |
     | 04    | [Binary Search Tree](#binary-search-tree)                                     | 14                 |
     | 05    | [Stack and Queue](#stack-and-queue)                                           | 9                  |
@@ -29,7 +29,7 @@ Two great online resources have been leveraged to compile the list:
     | 12    | [Dynamic Programming](#dynamic-programming)                                   | 30                 |
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
-    |       |                                                                               | 256 (total)        |
+    |       |                                                                               | 257 (total)        |
 
 * [Time and Space Complexity of Algorithms](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
@@ -64,7 +64,7 @@ Two great online resources have been leveraged to compile the list:
 [125](https://leetcode.com/problems/valid-palindrome/) | Valid Palindrome | Easy | [680](https://leetcode.com/problems/valid-palindrome-ii/) | Head and tail pointers move toward the middle.
 [88](https://leetcode.com/problems/merge-sorted-array/) | Merge Sorted Array | Easy | | Two pointers initialized at the ends.
 [977](https://leetcode.com/problems/squares-of-a-sorted-array/) | Squares of a Sorted Array | Easy | | Head and tail pointer moves based on certain condition.
-[925](https://leetcode.com/problems/long-pressed-name/) | Long Pressed Name | Easy | [986](https://leetcode.com/problems/interval-list-intersections/) | Two pointers, one moves based on certain condition.
+[925](https://leetcode.com/problems/long-pressed-name/) | Long Pressed Name | Easy | [56](https://leetcode.com/problems/merge-intervals/), [986](https://leetcode.com/problems/interval-list-intersections/) | Two pointers, one moves based on certain condition.
 [141](https://leetcode.com/problems/linked-list-cycle/) | Linked List Cycle | Medium | [142](https://leetcode.com/problems/linked-list-cycle-ii/) | Slow and fast pointers
 [524](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/) | Longest Word in Dictionary through Deleting | Medium | | Use two pointers to check if one string is a substring of another.
 [11](https://leetcode.com/problems/container-with-most-water/) | Container With Most Water | Medium | [42](https://leetcode.com/problems/trapping-rain-water/) | Head and tail pointers move toward the middle.
