@@ -28,8 +28,8 @@ Two great online resources have been leveraged to compile the list:
     | 11    | [Backtracking](#backtracking)                                                 | 22                 |
     | 12    | [Dynamic Programming](#dynamic-programming)                                   | 30                 |
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
-    | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 15                 |
-    |       |                                                                               | 257 (total)        |
+    | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 14                 |
+    |       |                                                                               | 256 (total)        |
 
 * [Time and Space Complexity of Algorithms](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
@@ -418,7 +418,7 @@ algorithms such as DFS or BFS, and it is highly likely that you will be still ab
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
-[684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | Medium | [1319](https://leetcode.com/problems/number-of-operations-to-make-network-connected/), [990](https://leetcode.com/problems/satisfiability-of-equality-equations/), [721](https://leetcode.com/problems/accounts-merge/), [737](https://leetcode.com/problems/sentence-similarity-ii/), [685](https://leetcode.com/problems/redundant-connection-ii/) | 
+[684](https://leetcode.com/problems/redundant-connection/) | Redundant Connection | Medium | [1319](https://leetcode.com/problems/number-of-operations-to-make-network-connected/), [990](https://leetcode.com/problems/satisfiability-of-equality-equations/), [721](https://leetcode.com/problems/accounts-merge/), [685](https://leetcode.com/problems/redundant-connection-ii/) | 
 
 
 ## Complexity of an Algorithm :chart_with_upwards_trend:
