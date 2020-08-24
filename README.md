@@ -369,7 +369,7 @@ the Trie data structure.
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
-[208](https://leetcode.com/problems/implement-trie-prefix-tree/) | Implement Trie (Prefix Tree) | Medium | [677](https://leetcode.com/problems/map-sum-pairs/), [648](https://leetcode.com/problems/replace-words/), [676](https://leetcode.com/problems/implement-magic-dictionary/), [720](https://leetcode.com/problems/longest-word-in-dictionary/), [211](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | Defining a `TrieNode` class whose children is a `defaultdict(TrieNode)` type variable will facilitate coding.
+[208](https://leetcode.com/problems/implement-trie-prefix-tree/) | Implement Trie (Prefix Tree) | Medium | [677](https://leetcode.com/problems/map-sum-pairs/), [648](https://leetcode.com/problems/replace-words/), [676](https://leetcode.com/problems/implement-magic-dictionary/), [720](https://leetcode.com/problems/longest-word-in-dictionary/), [211](https://leetcode.com/problems/design-add-and-search-words-data-structure/) | Defining a `TrieNode` class whose children is a `defaultdict(TrieNode)` type variable will facilitate coding.
 
 #### Topological Sorting
 
