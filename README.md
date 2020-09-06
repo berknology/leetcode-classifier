@@ -19,7 +19,7 @@ Two great online resources have been leveraged to compile the list:
     | 02    | [Two pointers](#two-pointers)                                                 | 18                 |
     | 03    | [Binary Search](#binary-search)                                               | 18                 |
     | 04    | [Binary Search Tree](#binary-search-tree)                                     | 14                 |
-    | 05    | [Stack and Queue](#stack-and-queue)                                           | 9                  |
+    | 05    | [Stack and Queue](#stack-and-queue)                                           | 11                 |
     | 06    | [Hash table and set](#hash-table-and-set)                                     | 6                  |
     | 07    | [Tree](#tree)                                                                 | 37                 |
     | 08    | [Divide and Conquer](#divide-and-conquer)                                     | 6                  |
@@ -29,7 +29,7 @@ Two great online resources have been leveraged to compile the list:
     | 12    | [Dynamic Programming](#dynamic-programming)                                   | 30                 |
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 14                 |
-    |       |                                                                               | 256 (total)        |
+    |       |                                                                               | 258 (total)        |
 
 * [Time and Space Complexity of Algorithms](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
@@ -121,6 +121,7 @@ will not list such problems in this list.
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
 [155](https://leetcode.com/problems/min-stack/) | Min Stack | Easy |  | Push a tuple (x, minimum) into stack. 
 [232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue using Stacks | Easy |  | Be careful about the amortized time complexity of each operation. Use two stacks. 
+[1047](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Remove All Adjacent Duplicates In String | Easy | [1209](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | Use stack.
 [20](https://leetcode.com/problems/valid-parentheses/) | Valid Parentheses | Easy | [921](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/), [1249](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Be careful about the type of parentheses. Maybe use a dict to simplify code.
 [739](https://leetcode.com/problems/daily-temperatures/) | Daily Temperatures | Medium | [402](https://leetcode.com/problems/remove-k-digits/) | Iterate through array, and pop util current temp smaller than or equal to temp at the top of the stack. Otherwise, push.
 [503](https://leetcode.com/problems/next-greater-element-ii/) | Next Greater Element II | Medium | [496](https://leetcode.com/problems/next-greater-element-i/) | Iterate trough the concatenated array, e.g., given a list `nums`, iterate through `nums+nums`.
