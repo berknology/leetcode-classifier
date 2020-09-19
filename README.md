@@ -26,10 +26,10 @@ Two great online resources have been leveraged to compile the list:
     | 09    | [Graph](#graph)                                                               | 25                 |
     | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 10                 |
     | 11    | [Backtracking](#backtracking)                                                 | 22                 |
-    | 12    | [Dynamic Programming](#dynamic-programming)                                   | 30                 |
+    | 12    | [Dynamic Programming](#dynamic-programming)                                   | 29                 |
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 14                 |
-    |       |                                                                               | 257 (total)        |
+    |       |                                                                               | 256 (total)        |
 
 * [Time and Space Complexity of Algorithms](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
@@ -266,7 +266,7 @@ proven to be very useful to solve optimal control/decision problems.
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
-[70](https://leetcode.com/problems/climbing-stairs/) | Climbing Stairs | Easy | [746](https://leetcode.com/problems/min-cost-climbing-stairs/), [1137](https://leetcode.com/problems/n-th-tribonacci-number/), [53](https://leetcode.com/problems/maximum-subarray/) | Simple DP
+[70](https://leetcode.com/problems/climbing-stairs/) | Climbing Stairs | Easy | [746](https://leetcode.com/problems/min-cost-climbing-stairs/), [1137](https://leetcode.com/problems/n-th-tribonacci-number/) | Simple DP
 [198](https://leetcode.com/problems/house-robber/) | House Robber | Easy | [213](https://leetcode.com/problems/house-robber-ii/), [337](https://leetcode.com/problems/house-robber-iii/), [740](https://leetcode.com/problems/delete-and-earn/) | For Problem 213, try twice, one without the first house and one without the last house. Then find the maximum of them. One way to solve Problem 740 is to convert it into a house robber problem.
 [1218](https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/) | Longest Arithmetic Subsequence of Given Difference | Medium | [413](https://leetcode.com/problems/arithmetic-slices/), [300](https://leetcode.com/problems/longest-increasing-subsequence/), [646](https://leetcode.com/problems/maximum-length-of-pair-chain/), [1143](https://leetcode.com/problems/longest-common-subsequence/) | For Problem 1218, use Hash table + DP
 [416](https://leetcode.com/problems/partition-equal-subset-sum/) | Partition Equal Subset Sum | Medium | [494](https://leetcode.com/problems/target-sum/), [474](https://leetcode.com/problems/ones-and-zeroes/), [322](https://leetcode.com/problems/coin-change/), [518](https://leetcode.com/problems/coin-change-2/), [139](https://leetcode.com/problems/word-break/), [377](https://leetcode.com/problems/combination-sum-iv/) | Knapsack problem.
