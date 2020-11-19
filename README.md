@@ -7,9 +7,6 @@ Two great online resources have been leveraged to compile the list:
 [Huahua](https://zxi.mytechroad.com/blog/leetcode-problem-categories/) and 
 [CyC2018](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md).
 
-**A day in the life of a software engineer: 6 hours of coffee time + 2 hours of coding.** 
-:coffee: [Buy me a Coffee](#buy-me-a-coffee-coffee)
-
 ## Table of Content :page_facing_up:
 * Classification of Leetcode Problems
 
@@ -576,13 +573,3 @@ feedback at the end. [CoderPad](https://coderpad.io/) is a great online collabor
 by many big tech companies for real interviews. After that, you might want to leverage 
 [Pramp.com](https://www.pramp.com/invt/M6olAymmybCmyO9mZLLV) and [interviewing.io](https://interviewing.io/) to practice 
 mock interviews with anonymous people, which will give you the real interview feeling. 
-
-
-## Buy me a Coffee :coffee:
-
-With enough coffee nothing is impossible!
-
-| PayPal | WeChat (微信) | AliPay (支付宝)  |
-| ------ | ------------- | --------------- |
-| <img src="/images/paypal.jpg" alt="PayPal" height="250" width="250"> | <img src="/images/wechat.jpg" alt="WeChat" height="250" width="250"> |  <img src="/images/alipay.jpg" alt="AliPay" height="250" width="250"> |
-
