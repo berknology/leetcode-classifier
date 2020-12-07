@@ -191,13 +191,3 @@ each class or model should have one test case class.
 * Long and involved function
 * Missing whitespace around operator or after comma in arguments, etc.
 * Using `print()` in production code
-
-
-## Buy me a Coffee :coffee:
-
-With enough coffee nothing is impossible!
-
-| PayPal | WeChat (微信) | AliPay (支付宝)  |
-| ------ | ------------- | --------------- |
-| <img src="/images/paypal.jpg" alt="PayPal" height="250" width="250"> | <img src="/images/wechat.jpg" alt="WeChat" height="250" width="250"> |  <img src="/images/alipay.jpg" alt="AliPay" height="250" width="250"> |
-
