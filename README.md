@@ -15,10 +15,10 @@ Two great online resources have been leveraged to compile the list:
     | 01    | [Linked List](#linked-list)                                                   | 12                 |
     | 02    | [Two pointers](#two-pointers)                                                 | 18                 |
     | 03    | [Binary Search](#binary-search)                                               | 18                 |
-    | 04    | [Binary Search Tree](#binary-search-tree)                                     | 14                 |
-    | 05    | [Stack and Queue](#stack-and-queue)                                           | 11                 |
+    | 04    | [Binary Search Tree](#binary-search-tree)                                     | 15                 |
+    | 05    | [Stack and Queue](#stack-and-queue)                                           | 14                 |
     | 06    | [Hash table and set](#hash-table-and-set)                                     | 6                  |
-    | 07    | [Tree](#tree)                                                                 | 36                 |
+    | 07    | [Tree](#tree)                                                                 | 35                 |
     | 08    | [Divide and Conquer](#divide-and-conquer)                                     | 6                  |
     | 09    | [Graph](#graph)                                                               | 25                 |
     | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 10                 |
@@ -26,7 +26,7 @@ Two great online resources have been leveraged to compile the list:
     | 12    | [Dynamic Programming](#dynamic-programming)                                   | 29                 |
     | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 14                 |
-    |       |                                                                               | 256 (total)        |
+    |       |                                                                               | 259 (total)        |
 
 * [Time and Space Complexity of Algorithms](#complexity-of-an-algorithm-chart_with_upwards_trend)    
 * [How to Approach a Coding Question](#how-to-approach-a-coding-question-heavy_check_mark)
@@ -93,7 +93,7 @@ algorithms, and make correspondence between your versions and `bisect.bisect()/b
 ## Binary Search Tree
 
 A special characteristic of BST is that its inorder traversal yields a sorted array. Note that the definitions of BST might 
-be different for different problems.
+be different for different problems. Moreover, you can recover a binary search tree from its preorder traversal.
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
@@ -106,6 +106,7 @@ be different for different problems.
 [108](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | Convert Sorted Array to Binary Search Tree | Easy | [109](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | Divide array by half and use recursion.
 [501](https://leetcode.com/problems/find-mode-in-binary-search-tree/) | Find Mode in Binary Search Tree | Easy |  | Be careful to the BST definition, and use inorder traversal
 [450](https://leetcode.com/problems/delete-node-in-a-bst/) | Delete Node in a BST | Medium |  | The deleted node could have no child, 1 child, and 2 children (which is the most tricky part)
+[1008](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | Construct Binary Search Tree from Preorder Traversal | Medium |  | Use recursion and for each node, update the lower and upper values for its children.
 [99](https://leetcode.com/problems/recover-binary-search-tree/) | Recover Binary Search Tree | Hard |  | Inorder traversal to find the two nodes and swap them
 
 
@@ -122,6 +123,8 @@ will not list such problems in this list.
 [20](https://leetcode.com/problems/valid-parentheses/) | Valid Parentheses | Easy | [921](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/), [1249](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/) | Be careful about the type of parentheses. Maybe use a dict to simplify code.
 [739](https://leetcode.com/problems/daily-temperatures/) | Daily Temperatures | Medium | [402](https://leetcode.com/problems/remove-k-digits/) | Iterate through array, and pop util current temp smaller than or equal to temp at the top of the stack. Otherwise, push.
 [503](https://leetcode.com/problems/next-greater-element-ii/) | Next Greater Element II | Medium | [496](https://leetcode.com/problems/next-greater-element-i/) | Iterate trough the concatenated array, e.g., given a list `nums`, iterate through `nums+nums`.
+[581](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/) | Shortest Unsorted Continuous Subarray | Medium |  | Use monotone stack.
+[239](https://leetcode.com/problems/sliding-window-maximum/) | Sliding Window Maximum | Hard | [1438](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Use monotone queue.
 
 
 ## Hash table and set
@@ -139,12 +142,12 @@ Hash table and hash set are also very useful to make time-space trade off. They 
 
 
 ## Tree
-Most of tree problems are traversal problems. It is a must to master algorithms such as DFS including 'pre-order', 
-'in-order', and 'post-order', and BFS or level order traversal. Generally speaking, the time complexity of DFS algorithm 
+Most of tree problems are traversal problems. Traversal algorithms such as DFS including 'pre-order', 
+'in-order', and 'post-order', and BFS or level order traversal are extremely important. Generally speaking, the time complexity of DFS algorithm 
 is `O(n)` where `n` is the number of nodes and the space complexity is `O(h)` where `h` is the height of the tree due to 
 implicit stack used in recursion. Additionally, BFS problems generally have complexity of `O(n)` in time and `O(w)` in
 space, where `w` is the maximum width of a tree. Moreover, it is very important to know concepts such as 'depth', 
-'height', 'level', 'complete', and 'perfect', etc. 
+'height', 'level', 'complete tree', and 'perfect tree', etc. 
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
@@ -155,7 +158,7 @@ space, where `w` is the maximum width of a tree. Moreover, it is very important 
 [572](https://leetcode.com/problems/subtree-of-another-tree/) | Subtree of Another Tree | Easy/Medium | [687](https://leetcode.com/problems/longest-univalue-path/) | Recursively check if `t` is the same tree with a tree rooted at the current node, or if `t` is a subtree rooted at current node's left or right child. Problem 687 can have linear time complexity by calculating the longest path by using left and right paths and only returning the max of left and right paths. 
 [102](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Binary Tree Level Order Traversal | Medium | [637](https://leetcode.com/problems/average-of-levels-in-binary-tree/), [513](https://leetcode.com/problems/find-bottom-left-tree-value/), [429](https://leetcode.com/problems/n-ary-tree-level-order-traversal/), [1302](https://leetcode.com/problems/deepest-leaves-sum/) | Level-order traversal. Use BFS or `defaultdict[list]` to add node into corresponding level. 
 [144](https://leetcode.com/problems/binary-tree-preorder-traversal/) | Binary Tree Preorder Traversal | Medium | [589](https://leetcode.com/problems/n-ary-tree-preorder-traversal/), [145](https://leetcode.com/problems/binary-tree-postorder-traversal/), [590](https://leetcode.com/problems/n-ary-tree-postorder-traversal/), [94](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Recursively is trivial, but iteratively is very complicated. IMO, iteratively in-order traversal is the hardest.
-[297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Serialize and Deserialize Binary Tree | Hard | [449](https://leetcode.com/problems/serialize-and-deserialize-bst/), [1008](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/), [106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/), [105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | In the binary tree problem, we need to have "null" indicator to represent null node in the serialized string, while BST does not. BST problem uses pre-order traversal to serialize and deserialize by recursively building trees by checking lower and upper bounds for subtrees. 
+[297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Serialize and Deserialize Binary Tree | Hard | [449](https://leetcode.com/problems/serialize-and-deserialize-bst/), [106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/), [105](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | In the binary tree problem, we need to have "null" indicator to represent null node in the serialized string, while BST does not. BST problem uses pre-order traversal to serialize and deserialize by recursively building trees by checking lower and upper bounds for subtrees. 
 [968](https://leetcode.com/problems/binary-tree-cameras/) | Binary Tree Cameras | Hard | [979](https://leetcode.com/problems/distribute-coins-in-binary-tree/) | Bottom up. DFS + greedy. 
 
 
@@ -163,7 +166,8 @@ space, where `w` is the maximum width of a tree. Moreover, it is very important 
 
 Divide and conquer approach refers to decomposing a big problem into smaller problems, then combine the results obtained 
 from these smaller problems which are solved recursively. When stuck, think about the base case (the smallest problem), 
-and see if we can build up a solution recursively from there. 
+and see if we can build up a solution recursively from there. Merge sort and quick sort algorithms both leverage divide 
+and conquer approach.
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
@@ -179,7 +183,7 @@ Graph problems are generalization of tree problems. DFS and BFS traversals are e
 problems. One key difference between graph and tree problems is that graph traversal requires a `visited` variable to 
 memorize nodes that have been visited before. Moreover, use DFS to solve connected problems and BFS to solve shortest
 path problems. The complexity of graph traversals is generally `O(V+E)` in time and `O(V)` in space, where `V` is the 
-number of vertices and `E` is the number of edges. 
+number of vertices/nodes and `E` is the number of edges. 
 
  ID | Problem Name | Difficulty | Similar problems | Main Idea
 --- | ------------ | ---------- | ---------------- | ----------------------------------------------------------
@@ -239,7 +243,7 @@ constraints of the problem. A great high-level introduction of backtracking algo
 [79](https://leetcode.com/problems/word-search/) | Word Search | Medium | [212](https://leetcode.com/problems/word-search-ii/) | DFS for problem 79 and DFS + Trie for Problem 212.
 [22](https://leetcode.com/problems/generate-parentheses/) | Generate Parentheses | Medium | [301](https://leetcode.com/problems/remove-invalid-parentheses/) | Add `(` whenever the number of `(` is smaller than `n`, and add `)` whenever the number of `)` is smaller than the number of open parentheses.  
 [131](https://leetcode.com/problems/palindrome-partitioning/) | Palindrome Partitioning | Medium | [93](https://leetcode.com/problems/restore-ip-addresses/), [698](https://leetcode.com/problems/partition-to-k-equal-sum-subsets/), [842](https://leetcode.com/problems/split-array-into-fibonacci-sequence/), [282](https://leetcode.com/problems/expression-add-operators/) | Partition
-[37](https://leetcode.com/problems/sudoku-solver/) | Sudoku Solver | Hard | [51](https://leetcode.com/problems/n-queens/) | Too hard :sob:
+[37](https://leetcode.com/problems/sudoku-solver/) | Sudoku Solver | Hard | [51](https://leetcode.com/problems/n-queens/) | 
 
 
 ## Dynamic Programming
@@ -269,7 +273,7 @@ proven to be very useful to solve optimal control/decision problems.
 [416](https://leetcode.com/problems/partition-equal-subset-sum/) | Partition Equal Subset Sum | Medium | [494](https://leetcode.com/problems/target-sum/), [474](https://leetcode.com/problems/ones-and-zeroes/), [322](https://leetcode.com/problems/coin-change/), [518](https://leetcode.com/problems/coin-change-2/), [139](https://leetcode.com/problems/word-break/), [377](https://leetcode.com/problems/combination-sum-iv/) | Knapsack problem.
 [62](https://leetcode.com/problems/unique-paths/) | Unique Paths | Medium | [63](https://leetcode.com/problems/unique-paths-ii/), [64](https://leetcode.com/problems/minimum-path-sum/), [120](https://leetcode.com/problems/triangle/), [931](https://leetcode.com/problems/minimum-falling-path-sum/) | DP in 2-dimensional space. Deal with the boundaries first for Problems 62-64. 
 [85](https://leetcode.com/problems/maximal-rectangle/) | Maximal Rectangle | Hard/Medium | [221](https://leetcode.com/problems/maximal-square/), [1277](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) | Leverage the solution to Problem [84](https://leetcode.com/problems/largest-rectangle-in-histogram/) using stack for Problems 85 and 221.
-[309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Best Time to Buy and Sell Stock with Cooldown | Medium/Hard | [801](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/) | Multi-state DP
+[309](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) | Best Time to Buy and Sell Stock with Cooldown | Medium/Hard | [801](https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/) | Multi-state (rest, sold, hold) DP
 
 
 ## Miscellaneous
@@ -341,7 +345,7 @@ where `0s` and `1s` represent a sequence of 0s and 1s respectively.
 There are a few tips that might help solve bit manipulation problems.
 * Leverage `x ^ 0s = x` and `x ^ x = 0`, we can remove or find duplicate number, e.g., `1^1^2 = 2`.
 * `x&(x-1)` will remove the last 1 in the binary representation of `x`, and `x&(-x)` will get the last 1 in the binary representation.
-* The binary representation of `-k` as a n-bit number is `concat(1, 2^(n-1)-k)`.
+* The binary representation of `-k` as a n-bit number is `concat(1, bin(2^(n-1)-k))` where `bin` denotes binary representation.
 * In Python converting an integer represented in any base to a binary number as a **string** can be done using `bin(num)`. Be careful when `num` is negative.
 * `x << n` will multiply `x` by 2^n, and `x >> n` will divide `x` by 2^n.
 
@@ -390,24 +394,24 @@ A python implementation of the disjoint set data structure is given below.
 ```python
 class UnionFind:
     def __init__(self, n):
-        self._parents = [i for i in range(n + 1)]
-        self._ranks = [1 for _ in range(n + 1)]
+        self.parents = [i for i in range(n)]
+        self.ranks = [1 for _ in range(n)]
     
     def find(self, u):
-        if u != self._parents[u]:
-            self._parents[u] = self.find(self._parents[u])
-        return self._parents[u]
+        if u != self.parents[u]:
+            self.parents[u] = self.find(self.parents[u])
+        return self.parents[u]
     
     def union(self, u, v):
         pu, pv = self.find(u), self.find(v)
         if pu == pv: return False
-        if self._ranks[pu] < self._ranks[pv]:
-            self._parents[pu] = pv
-        elif self._ranks[pu] > self._ranks[pv]:
-            self._parents[pv] = pu
+        if self.ranks[pu] < self.ranks[pv]:
+            self.parents[pu] = pv
+        elif self.ranks[pu] > self.ranks[pv]:
+            self.parents[pv] = pu
         else:        
-            self._parents[pv] = pu
-            self._ranks[pu] += 1
+            self.parents[pv] = pu
+            self.ranks[pu] += 1
         return True
 ```
 
@@ -421,7 +425,7 @@ algorithms such as DFS or BFS, and it is highly likely that you will be still ab
 
 ## Complexity of an Algorithm :chart_with_upwards_trend:
 
-Algorithm complexity is a measure the amount of time and/or space required by an algorithm as a function of the input 
+Algorithm complexity is a measure of the amount of time and/or space required by an algorithm as a function of the input 
 size. The time complexity is the computational complexity that describes the amount of time it takes to run an algorithm 
 and the space complexity is amount of memory space required by the algorithm. 
 
@@ -438,20 +442,20 @@ We observe from the above picture that when `n` is large,
 ```
 O(n!) > O(2^n) > O(n^2) > O(nlog(n)) > O(n) > O(log(n)) > O(1)
 ``` 
-which indicate the order of complexity in decreasing order as: 
+which indicates the order of complexity in decreasing order as: 
 factorial, exponential, polynomial, linearithmic, linear, logarithmic, and constant. 
 
 The following table summarizes the complexity of common algorithms.
 
 | Algorithm         | Best Time    | Average Time | Worst Time   | Worst Space | Comments                                  | 
 | ----------------- | ------------ | ------------ | -----------  | ----------- | ----------------------------------------- |
-| Quick sort        | `O(nlog(n))` | `O(nlog(n))` | `O(n^2)`     | `O(n)`      | Unstable                                  |
-| Merge sort        | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable                                    |
+| Quick sort        | `O(nlog(n))` | `O(nlog(n))` | `O(n^2)`     | `O(n)`      | [Unstable](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability)                                  |
+| Merge sort        | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | [Stable](https://en.wikipedia.org/wiki/Sorting_algorithm#Stability)                                    |
 | Tim sort          | `O(n)`       | `O(nlog(n))` | `O(nlog(n))` | `O(n)`      | Stable. Python uses Tim sort.             |
 | Heap sort         | `O(nlog(n))` | `O(nlog(n))` | `O(nlog(n))` | `O(1)`      | Unstable                                  |
 | Binary search     |              |              | `O(log(n))`  | `O(1)`      |                                           |
-| Binary Tree DFS   |              |              | `O(n)`       | `O(h)`      | `h` is the height of the tree             |
-| Binary Tree BFS   |              |              | `O(n)`       | `O(w)`      | `w` is the maximum width of the tree      |
+| Tree DFS          |              |              | `O(n)`       | `O(h)`      | `h` is the height of the tree             |
+| Tree BFS          |              |              | `O(n)`       | `O(w)`      | `w` is the maximum width of the tree      |
 | Graph DFS         |              |              | `O(V+E)`     | `O(V)`      | `V` and `E` are numbers of vertices and edges respectively |
 | Graph BFS         |              |              | `O(V+E)`     | `O(V)`      |                                           |
 | Permutation       |              |              | `O(n!)`      | `O(n)`      | Permutation (backtracking)                |
@@ -474,7 +478,7 @@ not be available in a coding interview. But it doesn't hurt to ask.
 
 ## How to Approach a Coding Question :heavy_check_mark:
 
-I highly recommend to get a copy of [Gayle McDowell's](http://www.gayle.com/) coding interview preparation book 
+I recommend to get a copy of [Gayle McDowell's](http://www.gayle.com/) coding interview preparation book 
 [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850), 
 and follow the recommend **seven steps** (illustrated below) to answer any coding questions.
 
@@ -559,7 +563,7 @@ not dogmatically follow the above 7 steps. Rather, be flexible and agile.**
 * Did not test your algorithm
 * Poor naming of variables or functions
 * Code had bugs or missed edge cases
-* Code was not clean or not modularized
+* Code was not clean or modularized
 * Did not respect the interviewer or was too arrogant
 
 
@@ -568,8 +572,8 @@ Now you have mastered the skills and tips to crack the coding interviews, it is 
 before you take a real job interview. This step is extremely valuable since coding under pressure is very different and 
 you need practice to be at your best. 
 
-You can start by pairing a coding buddy and give each other two medium-level questions to solve in 45 minutes, and give 
-feedback at the end. [CoderPad](https://coderpad.io/) is a great online collaborative coding environment for mock interviews. It is also used 
-by many big tech companies for real interviews. After that, you might want to leverage 
-[Pramp.com](https://www.pramp.com/invt/M6olAymmybCmyO9mZLLV) and [interviewing.io](https://interviewing.io/) to practice 
-mock interviews with anonymous people, which will give you the real interview feeling. 
+You can start by pairing a coding buddy and give each other a medium-level question to solve in 25 minutes, and give 
+feedback at the end. [CoderPad](https://coderpad.io/) is a great online collaborative coding environment for mock 
+interviews. After that, you might want to leverage [Pramp.com](https://www.pramp.com/invt/M6olAymmybCmyO9mZLLV) 
+and [interviewing.io](https://interviewing.io/) to practice mock interviews with anonymous people, which will give you 
+the "real" interview feeling. 
