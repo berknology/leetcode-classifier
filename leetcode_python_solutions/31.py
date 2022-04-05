@@ -12,7 +12,12 @@ class Solution:
             while i > index and nums[i] <= nums[index]:
                 i -= 1
             nums[index], nums[i] = nums[i], nums[index]
-            nums[index+1:] = nums[index+1:][::-1]
+            l, r = index+1, len(nums)-1
+            while l < r:
+                nums[l], nums[r] = nums[r], nums[l]
+                l += 1
+                r -= 1
+
     def find_first_asc_ele(self, nums):
         i = len(nums)-1
         while i > 0 and nums[i-1] >= nums[i]:
