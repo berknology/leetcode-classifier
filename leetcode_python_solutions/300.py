@@ -1,4 +1,13 @@
 class Solution:
+    """
+    Longest Increasing Subsequence
+
+    dp[i] denotes the length of the LIS ends with nums[i]
+
+    dp[i] = max(dp[i], 1 + dp[j]) for j < i if dp[i] > dp[j]
+
+
+    """
     def lengthOfLIS(self, nums: List[int]) -> int:
         n = len(nums)
         dp = [1]*n
@@ -8,12 +17,17 @@ class Solution:
                     dp[i] = max(dp[i], 1+dp[j])
         return max(dp)
 
-"""
-Longest Increasing Subsequence
 
-dp[i] denotes the length of the LIS from nums[0:i+1]
-
-dp[i] = max(1 + dp[j]) for j < i if dp[i] > dp[j]
-        
-
-"""
+# import bisect
+#
+# class Solution:
+#     def lengthOfLIS(self, nums: List[int]) -> int:
+#         # dp[i] is the smallest ending number of the LISs with length i+1
+#         dp = []
+#         for num in nums:
+#             index = bisect.bisect_left(dp, num)
+#             if index == len(dp):
+#                 dp.append(num)
+#             else:
+#                 dp[index] = num
+#         return len(dp)
