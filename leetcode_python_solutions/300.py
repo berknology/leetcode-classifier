@@ -17,10 +17,12 @@ class Solution:
                     dp[i] = max(dp[i], 1+dp[j])
         return max(dp)
 
-
+#
 # import bisect
 #
+#
 # class Solution:
+#     """Patience sorting"""
 #     def lengthOfLIS(self, nums: List[int]) -> int:
 #         # dp[i] is the smallest ending number of the LISs with length i+1
 #         dp = []
