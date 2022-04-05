@@ -14,7 +14,6 @@ class Solution:
 
     def minOperations(self, target: List[int], arr: List[int]) -> int:
         m = len(target)
-        n = len(arr)
         hash_map = {}
         for i, num in enumerate(target):
             hash_map[num] = i
