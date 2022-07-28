@@ -309,7 +309,7 @@ heap/priority queue and sorting algorithms which have time complexities of `O(nl
 [769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | Medium |  | Iterate through array. If current max is smaller than or equal to current index, the the number of chunks increases by 1.
 [462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves to Equal Array Elements II | Medium | [215](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Quick select algorithm.
 [287](https://leetcode.com/problems/find-the-duplicate-number/) | Find the Duplicate Number | Medium |  | Slow and fast pointers + cycle detection.
-
+[36](https://leetcode.com/problems/valid-sudoku/) | Valid Sudoku | Medium | | Check if 9x9 Sudoku matrix is valid
 #### Math
 
 Typical math problems include finding prime numbers, gcd (greatest common divisor), lcm (least common multiple), 
