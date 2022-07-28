@@ -24,7 +24,7 @@ Two great online resources have been leveraged to compile the list:
     | 10    | [Greedy Algorithm](#greedy-algorithm)                                         | 10                 |
     | 11    | [Backtracking](#backtracking)                                                 | 22                 |
     | 12    | [Dynamic Programming](#dynamic-programming)                                   | 29                 |
-    | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 35                 |
+    | 13    | [Miscellaneous (string, array, math, bit manipulation)](#miscellaneous)       | 37                 |
     | 14    | [Advanced Topics (Trie, Topological sorting, Union find)](#advanced-topics)   | 14                 |
     |       |                                                                               | 259 (total)        |
 
@@ -309,6 +309,7 @@ heap/priority queue and sorting algorithms which have time complexities of `O(nl
 [769](https://leetcode.com/problems/max-chunks-to-make-sorted/) | Max Chunks To Make Sorted | Medium |  | Iterate through array. If current max is smaller than or equal to current index, the the number of chunks increases by 1.
 [462](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | Minimum Moves to Equal Array Elements II | Medium | [215](https://leetcode.com/problems/kth-largest-element-in-an-array/) | Quick select algorithm.
 [287](https://leetcode.com/problems/find-the-duplicate-number/) | Find the Duplicate Number | Medium |  | Slow and fast pointers + cycle detection.
+[2133](https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/) | Check if Every Row and Column Contains All Numbers | Easy | | validate nxn matrix
 [36](https://leetcode.com/problems/valid-sudoku/) | Valid Sudoku | Medium | | Check if 9x9 Sudoku matrix is valid
 #### Math
 
